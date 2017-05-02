@@ -3,66 +3,40 @@ body{
 	padding: 0;
 }
 /*导航条*/
-.chearfix::after{
-	content: "";
-	clear: both;
-	display: block;
-	width: 0;
-	height: 0;
-	font-size: 0;
-}
 .menu{
-	height: 48px;
-	background-color: #535353;
-	margin: 0px auto;
-	position: relative;
+	
 }
-.menu img{
-	height: 30px;
-	position: absolute;
-	left: 20px;
-	top: 9px;
-}
-.menu ul{
-	list-style-type: none;
-	margin-left: 1000px;
-}
-.menu ul li{
-	float: left;
-	padding: 10px;
-}
-.menu ul li a{
-	color: #fff;
-}
-
 /*首页*/
 .home{
-	/*background-color: #FF0000; */
 	height: 750px;
+	background-color: #fff;
 }
 
 /*关于我们*/
 .about{
-	background-color: #FFFF00;
 	height: 750px;
+	background-color: #f00;
 }
 
 /*工作历程*/
 .job{
 	height: 750px;
+	background-color: #f0f;
 }
 
 /*主营业务*/
 .business{
 	height: 750px;
-}
-
-/*团队*/
-.team{
-	height: 750px;
+	background-color: #0ff;
 }
 
 /*联系方式*/
 .contact{
 	height: 750px;
+	background-color: #ff0;
+}
+/*尾部*/
+footer{
+	height: 50px;
+	background-color: #000;
 }

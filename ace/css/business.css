@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
 }
@@ -7,6 +8,7 @@
 	clear: both;
 }
 .business {
+	height: 750px;
   width: 1200px;
   margin: auto;
 }

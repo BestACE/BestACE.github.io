@@ -1,0 +1,131 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.about{
+	width: 	100%;
+	height: 750px;
+	background-image: url(../img/about.jpg);
+}
+.perspective {
+	position: relative;
+  -webkit-perspective: 0;
+  perspective: 0;
+  -webkit-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+  max-width: 70%;
+  height: 100%;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+input { display: none; }
+.tab h3,
+.tab h1{
+	height: 35px;
+	line-height: 35px;
+	margin: 0;
+}
+.tab{
+  position: absolute;
+  width: 8%;
+  bottom: 0px;
+  color: #fff;
+  z-index: 2;
+  opacity: 0.5;
+}
+
+.tab:nth-of-type(1) {
+  left: 36%;
+}
+
+.tab:nth-of-type(2) {
+ left: 46%;
+}
+
+.tab:nth-of-type(3) {
+ left: 56%;
+}
+
+.cube {
+  position: relative;
+  margin: 0 auto 0;
+  width: 100%;
+  height: 750px;
+  -webkit-transform-origin: 0 340px;
+  -ms-transform-origin: 0 340px;
+  transform-origin: 0 340px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+  transition: transform 0.5s ease-in;
+}
+
+.tab-content {
+  width: 100%;
+  height: 750px;
+  position: absolute;
+
+}
+
+.tab-content h1 {
+  font-size: 25px;
+  margin: 75px 0 10px;
+  font-weight: 300;
+}
+
+.tab-content p { font-size: 12px; }
+
+.tab-content:nth-child(2) {
+  -webkit-transform: translateZ(375px);
+  transform: translateZ(375px);
+  background: #1B9AAA;
+}
+
+.tab-content:nth-child(1) {
+  -webkit-transform: rotateX(-270deg) translateY(-375px);
+  transform: rotateX(-270deg) translateY(-375px);
+  -webkit-transform-origin: top left;
+  -ms-transform-origin: top left;
+  transform-origin: top left;
+  background: #06D6A0;
+}
+
+.tab-content:nth-child(3) {
+  -webkit-transform: rotateX(-90deg) translateY(375px);
+  transform: rotateX(-90deg) translateY(375px);
+  -webkit-transform-origin: bottom center;
+  -ms-transform-origin: bottom center;
+  transform-origin: bottom center;
+  background: #EF476F;
+}
+#tab-one:checked ~ .cube {
+  -webkit-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
+
+#tab-two:checked ~ .cube {
+  -webkit-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+
+#tab-three:checked ~ .cube {
+  -webkit-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+}
+.tab *{
+	transition: all 0.5s;
+}
+#tab-one:checked ~ .tab:nth-of-type(1){
+	color: #5EDFCC;
+	opacity: 1;
+}
+#tab-two:checked ~ .tab:nth-of-type(2){
+	color: #5EDFCC;
+	opacity: 1;
+}
+#tab-three:checked ~ .tab:nth-of-type(3){
+	color: #5EDFCC;
+	opacity: 1;
+}

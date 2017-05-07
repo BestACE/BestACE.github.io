@@ -16,18 +16,7 @@ body{
 }
 
 /*主营业务*/
-.business{
-	height: 750px;
-/*	background-color: #0ff;*/
-}
 
 /*联系方式*/
-.contact{
-	height: 750px;
-	background-color: #ff0;
-}
+
 /*尾部*/
-footer{
-	height: 50px;
-	background-color: #000;
-}

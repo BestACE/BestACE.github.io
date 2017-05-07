@@ -1,41 +1,62 @@
-*{
+.about *{
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
+	transition: all .5s;
 }
 .about{
 	width: 	100%;
 	height: 750px;
-	background-image: url(../img/about.jpg);
+	background-image: url(../img/about/about.jpg);
 }
 .perspective {
 	position: relative;
   -webkit-perspective: 0;
   perspective: 0;
-  -webkit-perspective-origin: 50% 50%;
-  perspective-origin: 50% 50%;
-  max-width: 70%;
+  -webkit-perspective-origin: 50% 50px;
+  perspective-origin: 50% 50px;
+  max-width: 80%;
   height: 100%;
   margin: 0 auto;
-
   text-align: center;
 }
 
-input { display: none; }
-.tab h3,
-.tab h1{
+input{ display: none; }
+label.tab h3,
+label.tab h1{
 	height: 35px;
 	line-height: 35px;
 	margin: 0;
+	padding: 0;
 }
 .tab{
-  position: absolute;
-  width: 8%;
-  bottom: 0px;
-  color: #fff;
-  z-index: 2;
-  opacity: 0.5;
+	position: absolute;
+	width: 6%;
+	bottom: 0px;
+	z-index: 2;
+	cursor: pointer;
+	color: #fff;
+	opacity: 0.5;
 }
-
+.tab_content{
+	margin: 0;
+	position: absolute;
+	right: 0;
+	top: 30%;
+	width: 60%;
+	height: 40%;
+	color: #fff;
+	border: 1px solid #fff;
+}
+.tab-content figure{
+	margin: 0;
+	position: absolute;
+	width: 40%;
+	height: 50%;
+	left: 0;
+	top: 25%;
+	border: 1px solid #fff;
+}
 .tab:nth-of-type(1) {
   left: 36%;
 }
@@ -53,9 +74,9 @@ input { display: none; }
   margin: 0 auto 0;
   width: 100%;
   height: 750px;
-  -webkit-transform-origin: 0 340px;
-  -ms-transform-origin: 0 340px;
-  transform-origin: 0 340px;
+  -webkit-transform-origin: 0 375px;
+  -ms-transform-origin: 0 375px;
+  transform-origin: 0 375px;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   -webkit-transition: -webkit-transform 0.5s ease-in;
@@ -66,21 +87,14 @@ input { display: none; }
   width: 100%;
   height: 750px;
   position: absolute;
+  transition: all .3s;
 
 }
-
-.tab-content h1 {
-  font-size: 25px;
-  margin: 75px 0 10px;
-  font-weight: 300;
-}
-
-.tab-content p { font-size: 12px; }
 
 .tab-content:nth-child(2) {
   -webkit-transform: translateZ(375px);
   transform: translateZ(375px);
-  background: #1B9AAA;
+  opacity: 1;
 }
 
 .tab-content:nth-child(1) {
@@ -89,7 +103,7 @@ input { display: none; }
   -webkit-transform-origin: top left;
   -ms-transform-origin: top left;
   transform-origin: top left;
-  background: #06D6A0;
+  opacity: 0;
 }
 
 .tab-content:nth-child(3) {
@@ -98,7 +112,33 @@ input { display: none; }
   -webkit-transform-origin: bottom center;
   -ms-transform-origin: bottom center;
   transform-origin: bottom center;
-  background: #EF476F;
+  opacity: 0;
+}
+#tab-one:checked ~ .cube > .tab-content:nth-child(1){
+	opacity: 1;
+}
+
+#tab-two:checked ~ .cube > .tab-content:nth-child(2){
+	opacity: 1;
+}
+
+#tab-three:checked ~ .cube > .tab-content:nth-child(3){
+	opacity: 1;
+}
+
+#tab-one:checked ~ .cube > .tab-content:nth-child(2),
+#tab-one:checked ~ .cube > .tab-content:nth-child(3){
+	opacity: 0;
+}
+
+#tab-two:checked ~ .cube > .tab-content:nth-child(1),
+#tab-two:checked ~ .cube > .tab-content:nth-child(3){
+	opacity: 0;
+}
+
+#tab-three:checked ~ .cube > .tab-content:nth-child(2),
+#tab-three:checked ~ .cube > .tab-content:nth-child(1){
+	opacity: 0;
 }
 #tab-one:checked ~ .cube {
   -webkit-transform: rotateX(-90deg);
@@ -114,6 +154,7 @@ input { display: none; }
   -webkit-transform: rotateX(90deg);
   transform: rotateX(90deg);
 }
+
 .tab *{
 	transition: all 0.5s;
 }
@@ -128,4 +169,37 @@ input { display: none; }
 #tab-three:checked ~ .tab:nth-of-type(3){
 	color: #5EDFCC;
 	opacity: 1;
+}
+.tab-content-one{	
+	display: inline-block;
+	width: 300px;
+	height: 300px;
+	margin:0 2%;	
+	border-radius: 50%;
+}
+.tab-content-one:nth-child(-n+4){
+	margin-top:30px ;
+	margin-bottom: 5px;
+}
+.tab-content-one img{
+	width: 100%;
+	height: 100%;
+	border-radius:100%;
+}
+.tab-content-two{	
+	display: inline-block;
+	width: 300px;
+	height: 300px;
+	margin:0 2%;	
+	border-radius: 50%;
+	
+}
+.tab-content-two:nth-child(-n+4){
+	margin-top:30px ;
+	margin-bottom: 5px;
+}
+.tab-content-two img{
+	width: 100%;
+	height: 100%;
+	border-radius:100%;
 }

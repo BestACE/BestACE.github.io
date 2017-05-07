@@ -1,0 +1,83 @@
+.clearfix::after{
+	content:"";
+	clear:both;
+	display: table;
+}
+
+.contact{
+	position: relative;
+
+	background-size:100% auto;
+	height: 768.8px;
+	
+}
+.contact img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 110%;
+	z-index: -2;
+}
+.copyright{
+	position: relative;
+}
+.copright p{
+	position:relative;
+	right:170px;
+	top:200px;
+}
+.contact .imformation{
+	float:right;
+	margin-right:28%;
+	margin-top:11%;
+}
+.contact .erweima{
+	float:left;
+	border:1px solid #000;
+	width:250px;
+	height:250px;
+	margin-left:30%;
+	margin-top:13%;
+}
+.imformation ul li{
+	list-style: none;
+}
+.imformation ul li p{
+	margin:10px;
+	font-size:20px;
+	font-family: "微软雅黑";
+	color:#000;
+}
+.copyright{
+	margin-bottom:0;
+	position: absolute;
+    top:580px;
+    margin-left:32%;
+    margin-right:30%;
+    color:#bbb;
+    list-style: none;
+}
+
+.imformation ul li h1{
+	font-size:45px;
+	color:#0b9;
+	font-family"微软雅黑"
+}
+.imformation ul li p,h1{
+	text-align: left;
+	}
+.imformation ul{
+	padding: 0;
+}
+footer{
+	width: 100%;
+	height: 20px;
+	text-align: center;
+	margin-bottom: 0px;
+	padding: 0;
+	color:#bbb;
+}
+footer ul{
+	list-style: none;
+}

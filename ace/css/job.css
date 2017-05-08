@@ -1,16 +1,16 @@
 .clearfix::after{
 	content: "";
 	clear: both;
-	display: table;
+	display:block;
 }
 .top *{
 	box-sizing: border-box;
 }
 .job{
 	/*background-size: contain;*/
-	height: 756.8px;
+	height: 760px;
 	margin: auto;
-	background-image: url(../img/job.jpg);
+	background-image: url(../img/job/job.jpg);
 	background-size: 100% auto;
 	position: relative;
 }
@@ -28,13 +28,14 @@
 	margin-top:100px ;
 }
 .job .top figure:nth-child(1){
-	margin-left: 55px;
+	margin-left: 40px;
 }
 .job .top figure:nth-child(2){
-	margin-left: -30px;
+	margin-left: -10px;
 }
 .job .top figure:nth-child(3){
-	margin-left: -25px;
+	margin-left: -5px;
+	margin-right: 0px;
 }
 
 .bottom *{
@@ -48,14 +49,14 @@
 	float: left;
 	width: 30%;
 	overflow: hidden;
-	margin-top: 100px;
+	margin-top: 50px;
 	text-align: center;
 }
 .job .bottom figure:nth-child(1){
-	margin-left: 240px;
+	margin-left: 230px;
 }
 .job .bottom figure:nth-child(2){
-	margin-left: -20px;
+	margin-left: -5px;
 }
 .job figure figcaption h3{
 	color: #fff;
@@ -69,6 +70,7 @@
 	top:275px;
 	left: 200px;
 	margin: auto;
+	margin-top: 100px;
 }
 .job figure img{
 	width: 170px;
@@ -83,6 +85,9 @@
 	transition: all .5s;
 }
 .job .bottom figure h3{
-	margin-top: 25px;
-	margin-bottom: 20px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+.job .bottom figure p{
+	margin: 10px;
 }

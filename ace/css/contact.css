@@ -6,7 +6,6 @@
 
 .contact{
 	position: relative;
-
 	background-size:100% auto;
 	height: 768.8px;
 	
@@ -23,14 +22,14 @@
 	position: relative;
 }
 .copright p{
-	position:relative;
+	position:absolute;
 	right:170px;
 	top:200px;
 }
 .contact .imformation{
 	float:right;
-	margin-right:28%;
-	margin-top:11%;
+	margin-right:22%;
+	margin-top:25%;
 }
 .contact .erweima{
 	float:left;
@@ -38,7 +37,7 @@
 	width:250px;
 	height:250px;
 	margin-left:30%;
-	margin-top:13%;
+	margin-top:28%;
 }
 .imformation ul li{
 	list-style: none;
@@ -47,7 +46,7 @@
 	margin:10px;
 	font-size:20px;
 	font-family: "微软雅黑";
-	color:#000;
+	color:#fff;
 }
 .copyright{
 	margin-bottom:0;

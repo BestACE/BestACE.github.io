@@ -23,9 +23,11 @@ clearfix::after{
 	float: right;
 }
 .imgalist{
-	height: 30px;
+	
+	display: none;
 	position: absolute;
 	width: 180px;
+	height: 30px;
 	margin-top: 20px;
 	left: 50px;
 	/*margin: 20px 800px 0px 20px;*/

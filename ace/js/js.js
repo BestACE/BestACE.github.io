@@ -8,5 +8,5 @@ $(function() {
 			} else {
 				$('.imgalist').fadeOut("slow");
 			}
-		})
+	})
 });

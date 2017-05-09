@@ -28,6 +28,7 @@ clearfix::after{
 	width: 180px;
 	margin-top: 20px;
 	left: 50px;
+	display: none;
 	/*margin: 20px 800px 0px 20px;*/
 	
 }

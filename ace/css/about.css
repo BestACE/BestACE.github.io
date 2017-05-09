@@ -136,10 +136,14 @@
 .tab-content figure{
 	position: absolute;
 	width: 600px;
-	height: 500px;
+	/*height: 800px;*/
 	left: 20px;
-	bottom: 280px;
-	border: 1px solid #fff;
+	/*bottom: 80px;*/
+	/*border: 1px solid #fff;*/
+}
+.tab-content figure img{
+	width: 100%;
+/*	height: 100%;*/
 }
 .tab_content h2:hover {
 	background-color: rgba(0,0,0,0.3);

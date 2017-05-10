@@ -1,12 +1,16 @@
 $(function() {
-	var m_st, m_po = 740;
+	var m_st;
+	var pageHeight=$(window).innerHeight();
+	$('.page').height(pageHeight);
 	$(window).scroll(
 		function() {
 			m_st = Math.max(document.body.scrollTop || document.documentElement.scrollTop);
-			if (m_st > m_po) {
+			if(m_st > pageHeight) {
 				$('.imgalist').fadeIn("slow");
 			} else {
 				$('.imgalist').fadeOut("slow");
 			}
-		})
+		}
+	);
+	
 });

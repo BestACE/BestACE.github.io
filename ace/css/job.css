@@ -1,0 +1,93 @@
+.clearfix::after{
+	content: "";
+	clear: both;
+	display:block;
+}
+.top *{
+	box-sizing: border-box;
+}
+.job{
+	/*background-size: contain;*/
+	height: 760px;
+	margin: auto;
+	background-image: url(../img/job/job.jpg);
+	background-size: 100% auto;
+	position: relative;
+}
+.top{
+	width: 1200px;
+	margin: auto;
+}
+.job .top figure{
+	float: left;
+	width: 30%;
+	/*height: 150px;*/
+	overflow: hidden;
+	/*margin: calc(10%/6);*/
+	text-align: center;
+	margin-top:100px ;
+}
+.job .top figure:nth-child(1){
+	margin-left: 40px;
+}
+.job .top figure:nth-child(2){
+	margin-left: -10px;
+}
+.job .top figure:nth-child(3){
+	margin-left: -5px;
+	margin-right: 0px;
+}
+
+.bottom *{
+	box-sizing: border-box;
+}
+.bottom{
+	width: 1200px;
+	margin: auto;
+}
+.job .bottom figure{
+	float: left;
+	width: 30%;
+	overflow: hidden;
+	margin-top: 50px;
+	text-align: center;
+}
+.job .bottom figure:nth-child(1){
+	margin-left: 230px;
+}
+.job .bottom figure:nth-child(2){
+	margin-left: -5px;
+}
+.job figure figcaption h3{
+	color: #fff;
+	font-family:"微软雅黑";
+	font-size: 15px;
+}
+.c img{
+	width: 75%;
+	height: auto;
+	position: absolute;
+	top:275px;
+	left: 200px;
+	margin: auto;
+	margin-top: 100px;
+}
+.job figure img{
+	width: 170px;
+	height: 170px;
+	border-radius: 100%;
+	margin-top: 5px;
+	
+}
+.job figure img:hover{
+	opacity: 0.5;
+	background-color: #fff;
+	transition: all .5s;
+}
+.job .bottom figure h3{
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+.job .bottom figure p{
+	margin: 10px;
+}

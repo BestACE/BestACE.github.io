@@ -6,12 +6,8 @@
 		<title>ACE工作室</title>
 		<link href="//cdn.bootcss.com/normalize/6.0.0/normalize.min.css" rel="stylesheet">
 		<link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="css/css.css" />
-		<link rel="stylesheet" href="css/business.css" />
-		<link rel="stylesheet" type="text/css" href="css/about.css" />
-		<link rel="stylesheet" type="text/css" href="css/menu.css" />
-		<link rel="stylesheet" type="text/css" href="css/contact.css" />
-		<link rel="stylesheet" type="text/css" href="css/job.css" />
+		<link rel="stylesheet" type="text/css" href="css/css.css"/>
+
 	</head>
 
 	<body>
@@ -19,38 +15,29 @@
 		<!--导航条-->
 		<div class="menu clearfix">
 			<ul>
-				<li>
-					<a href="#c">联系方式</a>
-				</li>
-				<li>
-					<a href="#b">主营业务</a>
-				</li>
-				<li>
-					<a href="#j">工作经历</a>
-				</li>
-				<li>
-					<a href="#a">关于</a>
-				</li>
-				<li><img class="imgalist" src="img/logo.png" /></li>
+				<li><a href="#contact">联系方式</a></li>
+				<li><a href="#business">主营业务</a></li>
+				<li><a href="#job">工作经历</a></li>
+				<li><a href="#about">关于</a></li>
 			</ul>
-			<!-- 			<div><img class="imgalist" src="img/logo.png"/></div> -->
+			<div class="img1"><img src="img/home/logo.png"/></div>
 		</div>
-
+		
 		<!--首页-->
-		<div class="home page">
-			<a href="#a"><img src="img/logo-01.png" /></a>
+		<div class="home">
+			<a href="#about"><img src="img/home/logo-01.png"/></a>
 		</div>
 
-		<a id="a"></a>
 		<!--关于我们-->
 		<a id="about"></a>
 		<div class="about page">
 			<input type="radio" name="tabs" id="tab-one" class="about_inp" checked="checked">
 			<input type="radio" name="tabs" id="tab-two" class="about_inp">
 			<input type="radio" name="tabs" id="tab-three" class="about_inp">
-			<label class="tab" for="tab-one"><h3>简 介</h3><h1>·</h1></label>
-			<label class="tab" for="tab-two"><h3>团队一</h3><h1>·</h1></label>
-			<label class="tab" for="tab-three"><h3>团队二</h3><h1>·</h1></label>
+			<label class="tab" for="tab-one"><h1>·</h1></label>
+			<label class="tab" for="tab-two"><h1>·</h1></label>
+			<label class="tab" for="tab-three"><h1>·</h1></label>
+			<div class="about-top"><h2>关于我们</h2><p></p></div>
 			<div class="cube">
 				<div class="tab-content">
 					<figure>
@@ -60,7 +47,7 @@
 						</figcaption>
 					</figure>
 					<div class="tab_content">
-						<h1>简介</h1>
+						<h1>简介：</h1>
 						<h2>2016年10月20号，软件技术151班徐道聪同学，在专业指导老师俞淑燕老师的指导带领下创办了ACE信息技术工作室。</h2>
 						<h2>在2016年12月07号获得创业园入园许可证，正式入驻我校创业街。</h2>
 						<h2>2016年12月22号获得绍兴市第七届绍兴市创业大赛高校组优胜奖。</h2>
@@ -135,138 +122,126 @@
 				</div>
 			</div>
 		</div>
-		<a id="j"></a>
+
 		<!--工作历程-->
 		<a id="job"></a>
-		<div class="job page clearfix">
-			<div class="top">
-				<figure>
-
-					<a href="//gx.zptc.cn/soft/index.html#gtco-services"><img src="img/job/3.2.jpg" /></a>
-
-					<figcaption>
-						<h3>基于互联网+的即时通讯软件的实现与开发</h3>
-						<p>2015</p>
-					</figcaption>
-				</figure>
-				<figure>
-					<a href=""><img src="img/job/3.4.jpg" alt="" /></a>
-					<figcaption>
-						<h3>服务外包竞赛</h3>
-						<p>2016</p>
-					</figcaption>
-				</figure>
-				<figure>
-					<a href=""><img src="img/job/3.2.jpg" alt="" /></a>
-					<figcaption>
-						<h3>移动应用开发专业介绍网站</h3>
-						<p>2017</p>
-					</figcaption>
-				</figure>
-			</div>
-			<div class="c">
-				<img src="img/job/3.6.png" />
-			</div>
-			<div class="bottom">
-				<figure>
-					<figcaption>
-						<p>2015</p>
-						<h3>软件技术专业介绍网站</h3>
-					</figcaption>
-					<a href=""><img src="img/job/3.3.jpg" alt="" /></a>
-
-				</figure>
-				<figure>
-					<figcaption>
-						<p>2016</p>
-						<h3>教师采购系统</h3>
-					</figcaption>
-					<a href=""><img src="img/job/3.5.jpg" alt="" /></a>
-
-				</figure>
+		<div class="job">
+			<!--<div class="i">
+				<img src="img/menu.jpg" alt="" />
+			</div>-->
+			<div class="jobx">
+				<ul class="timeline">
+					<li data-year="2015.3" data-text="基于互联网+的即时通讯实现与开发">
+						<div class="image"><a href=""><img src="img/job/3.2.jpg"/></a></div>
+					</li>
+					<li data-year="2015.8" data-text="软件技术专业介绍网站">
+						<div class="image"><a href="//gx.zptc.cn/soft/index.html"><img src="img/job/3.3.jpg"/></a></div>
+					</li>
+					<li data-year="2016.5" data-text="服务外包竞赛">
+						<div class="image"><a href=""><img src="img/job/3.4.jpg"/></a></div>
+					</li>
+					<li data-year="2016.12" data-text="教师采购系统">
+						<div class="image"><a href=""><img src="img/job/3.5.jpg"/></a></div>
+					</li>
+					<li data-year="2017.5" data-text="移动应用开发专业介绍网站">
+						<div class="image"><a href=""><img src="img/job/3.2.jpg"/></a></div>
+					</li>
+					
+				</ul>
 			</div>
 		</div>
 
-		<a id="b"></a>
 		<!--主营业务-->
-		<div class="business page clearfix">
-
+		<a id="business"></a>
+		<div class="business clearfix">
+          <div class="business2">
+          	<div class="font">
 			<h1>WHAT CAN WE DO</h1>
 			<p>我们能做什么</p>
-			<div class="spinner">
-				<div class="inner-spin"></div>
-				<span class="spinner-content">  
-			      	<p>网页制作</p>
-			        <img src="img/business/001.png">
-			     </span>
 			</div>
-			<div class="spinner">
-				<div class="inner-spin"></div>
-				<span class="spinner-content">
-			        <p>网站建设</p>
-			        <img src="img/business/002.png">
-			     </span>
-			</div>
-
-			<div class="spinner">
-				<div class="inner-spin"></div>
-				<span class="spinner-content">
-			        <p>APP开发</p>
-			        <img src="img/business/003.png">
-     			 </span>
-			</div>
-
+			<div class="S">
 			<div class="spinner-wrapper">
 				<div class="spinner">
-					<div class="inner-spin"></div>
+					<div class="spinner-spin"></div>
+					<span class="spinner-content">  
+				      	<p>网页制作</p>
+				        <img src="img/business/001.png">
+			     	</span>
+				</div>
+			</div>
+			<div class="spinner-wrapper">
+				<div class="spinner">
+					<div class="spinner-spin"></div>
+					<span class="spinner-content">
+				        <p>网站建设</p>
+				        <img src="img/business/002.png">
+			     	</span>
+				</div>
+			</div>
+			<div class="spinner-wrapper">
+				<div class="spinner">
+					<div class="spinner-spin"></div>
+					<span class="spinner-content">
+				        <p>APP开发</p>
+				        <img src="img/business/003.png">
+     			 	</span>
+				</div>
+			</div>
+			<div class="spinner-wrapper">
+				<div class="spinner">
+					<div class="spinner-spin"></div>
 					<span class="spinner-content">
 				        <p>软件开发</p>
 				        <img src="img/business/004.png">
 				     </span>
 				</div>
 			</div>
-			<div class="spinner-wrapper">
-				<div class="spinner">
-					<div class="inner-spin"></div>
-					<span class="spinner-content">
+				<div class="spinner-wrapper">
+					<div class="spinner">
+						<div class="spinner-spin"></div>
+						<span class="spinner-content">
                             <p>多媒体制作</p>
                             <img src="img/business/005.png">
                          </span>
+					</div>
 				</div>
-			</div>
-		</div>
-		<a id="c"></a>
-		<!--联系方式-->
+              </div>
+             </div>
+            </div>
+
+		<!--联系我们-->
+		<a id="contact"></a>
 		<div class="contact page">
 			<div class="big-contact">
 				<div class="erweima"></div>
 				<div class="imformation">
 					<ul>
 						<li>
-							<h1>400-823-823</h1></li>
+							<h1>153-8159-0768</h1></li>
 						<li>
-							<p>中国·绍兴&nbspACE&nbsp工作室</p>
+							<p>联系人：鄢先生</p>
 						</li>
 						<li>
-							<p>联系电话：400-823-823</p>
+							<p>QQ:826729970</p>
 						</li>
 						<li>
-							<p>亭山路474号&nbsp浙江邮电职业技术学院</p>
+							<p>GitHub：Kylin6</p>
+						</li>
+						<li>
+							<p>Email:826729970@qq.com</p>
+						</li>
+						<li>
+							<p>地址：亭山路474号&nbsp浙江邮电职业技术学院</p>
 						</li>
 						<li>
 							<p>邮编：312000</p>
 						</li>
-						<li>
-							<p>Email:</p>
-						</li>
-						<li>
-							<p>域名：</p>
-						</li>
 					</ul>
 				</div>
 			</div>
-			<img src="img/contact.jpg" alt="" />
+			<img src="img/contact/contact2.jpg" alt="" />
 		</div>
+
 
 		<!--尾部-->
 		<footer>
@@ -276,6 +251,7 @@
 				</li>
 			</ul>
 		</footer>
+		
 		<!--js内容-->
 		<script src="//cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 		<script type="text/javascript" src="js/js.js">

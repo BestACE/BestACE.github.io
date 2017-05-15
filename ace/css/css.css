@@ -65,11 +65,11 @@ html, body {min-height: 100vh;}
 	width: 50px;
 	height: 50px;
 	opacity: 0.7;
-	position: relative;
-	left: 770px;
+	position: absolute;
+	margin: auto;
 	right: 0;
-	top: 600px;
-	bottom: 0;
+	left: 0;
+	bottom: 100px;
 }
 
 
@@ -81,7 +81,7 @@ html, body {min-height: 100vh;}
 	box-sizing: border-box;
 }
 .about{
-	background-image: url(../img/about/about2.jpg);
+	background-image: url(../img/about/about.jpg);
 	position: relative;
 	background-repeat:no-repeat;
 	width: 100%;
@@ -95,53 +95,49 @@ html, body {min-height: 100vh;}
 }
 
 /*对三个选项的设置*/
-.tab{
-	width: 10px;
+.tab-d{
 	position: absolute;
-	bottom: 60px;
-	cursor: pointer;
-	color: #fff;
-	opacity: 0.3;
-}
-.tab h1{
+	margin: auto;
+	left: 0;
+	right: 0;
+	bottom: 50px;
+	height: 20px;
+	width: 100px;
+	z-index: 3;
 	text-align: center;
-	color: #5EDFCC;
+}
+.tab{
+	display: inline-block;
+	margin: 0 5px;
+
 	height: 20px;
 	line-height: 20px;
+	width: 20px;
+	cursor: pointer;
+	color: #5EDFCC;
+	opacity: 0.3;
 }
-.tab:nth-of-type(1) {
-  left: 720px;
-}
-
-.tab:nth-of-type(2) {
- left: 745px;
-}
-
-.tab:nth-of-type(3) {
- left: 770px;
-}
-
 /*选项的单击效果*/
 .tab{
 	transition: all 0.5s;
 }
-#tab-one:checked ~ .tab:nth-of-type(1){
+#tab-one:checked ~ .tab-d .tab:nth-of-type(1){
 	color: #5EDFCC;
 	opacity: 1;
 }
-#tab-two:checked ~ .tab:nth-of-type(2){
+#tab-two:checked ~ .tab-d .tab:nth-of-type(2){
 	color: #5EDFCC;
 	opacity: 1;
 }
-#tab-three:checked ~ .tab:nth-of-type(3){
+#tab-three:checked ~ .tab-d .tab:nth-of-type(3){
 	color: #5EDFCC;
 	opacity: 1;
 }
 /*旋转的盒子*/
 .cube{
 	position: relative;
-	width: 1500px;
-	margin: auto;
+	width: 1200px;
+	margin:auto;
 	height: 650px;
 	top: 75px;
 	transform-style: preserve-3d;
@@ -187,20 +183,15 @@ html, body {min-height: 100vh;}
 .tab_content h1{
 	display: block;
 	color: #5EDFCC;
-	/*text-align: center;*/
-	margin-left: 140px;
-	margin-top: 20px;
-	margin-bottom:50px ;
+	text-align: left;
 	line-height: 1em;
 }
 .tab_content h2{
 	display: block;
-	color: #000000;
+	color: #fff;
 	width: 540px;
 	text-align: left;
-	margin:30px auto;
-	margin-right: 120px;
-	margin-bottom: -10px;
+	margin: 15px 0;
 	line-height: 1em;
 	font-size: 20px;
 	transition: all 0.5s;
@@ -208,27 +199,27 @@ html, body {min-height: 100vh;}
 .tab_content{
 	position: absolute;
 	right: -30px;
-	bottom: 200px;
-	width: 800px;
-	color: #fff;
-	
+	bottom: 150px;
+	width: 600px;
+	color: #fff;	
 }
+
 .tab-content figure{
 	position: absolute;
-	width: 600px;
+	width: 450px;
 	/*height: 800px;*/
-	left: 0;
-	top: 60px;
-	/*bottom: 80px;*/
-	/*border: 1px solid #fff;*/
+	left:75px;
+
+	bottom: 120px;
+
 }
 .tab-content figure img{
-	width: 60%;
-/*	height: 100%;*/
+	width: 100%;
+
 }
 .tab_content h2:hover {
 	transform:scale(1.1,1.1);  
-	color: #ace;
+	color: #5EDFCC;
 	border-radius:4px;
 }
 
@@ -239,7 +230,11 @@ html, body {min-height: 100vh;}
 	position: relative;
 	margin: 4px 4px;
 	width: 240px;
-	height: 180px;
+	/*height: 240px;*/
+}
+.tab-content-one img,
+.tab-content-two img{
+	width: 100%;
 }
 .tab-content-one:nth-child(1),
 .tab-content-one:nth-child(2),
@@ -249,7 +244,8 @@ html, body {min-height: 100vh;}
 .tab-content-two:nth-child(2),
 .tab-content-two:nth-child(3),
 .tab-content-two:nth-child(4){
-	margin-top: 135px;
+	margin-top: 80px;
+	margin-bottom: 7px;
 }
 .tab-content-one h3,
 .tab-content-one img,
@@ -284,13 +280,13 @@ html, body {min-height: 100vh;}
 .tab-content-two::before{
 	position: absolute;
 	content: "";
-	width: 240px;
-	height: 180px;
+	width: 100%;
+	height: 100%;
 	z-index: 1;
 	opacity: 0;
 	/*background: linear-gradient(to top,rgba(0,0,0,0),rgba(0,0,0,0));*/ 
 	/*background-image: -webkit-linear-gradient(to top,rgba(0,0,0,0),rgba(0,0,0,0));*/ 
-	background: linear-gradient(to bottom, rgba(94,223,204,.5), rgba(3,3,3,0.5));
+	background: linear-gradient(to bottom, rgba(255,255,255,.8), rgba(3,3,3,0.5));
 	transition: all .8s;
 }
 .tab-content-one:hover::before,
@@ -625,79 +621,67 @@ html, body {min-height: 100vh;}
 
 
 /*联系我们*/
-.contact{
+.contact-1{
 	position: relative;
-	background-size:100% auto;
-	height: 768.8px;
+	background-image: url(../img/contact/contact2.jpg);
+	background-repeat: no-repeat;
+	width: 100%;
+	height:758px;
+}
+.contact-1 .contact-2{
+	width: 800px;
+	height: 500px;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin:auto;
+}
+.erweima{
+	display: inline-block;
+	border: 1px solid #000;
+	width:220px;
+	height:220px;
+	margin-left:90px ;
+}
+.erweima img{
+	width: 220px;
+}
+.information{
+	display: inline-block;
+	position:relative;
+	left:50px;
+	top:40px;
 	
 }
-.contact img{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 110%;
-	z-index: -2;
+.information ul{
+	padding-left: 0;
 }
-.copyright{
-	position: relative;
-}
-.copright p{
-	position:absolute;
-	right:170px;
-	top:200px;
-}
-.contact .imformation{
-	float:right;
-	margin-right:22%;
-	margin-top:25%;
-}
-.contact .erweima{
-	float:left;
-	border:1px solid #000;
-	width:250px;
-	height:250px;
-	margin-left:30%;
-	margin-top:28%;
-}
-.imformation ul li{
-	list-style: none;
-}
-.imformation ul li p{
-	margin:10px;
-	font-size:20px;
+.information p{
+	font-size: 20px;
 	font-family: "微软雅黑";
-	color:#fff;
+	color:#ddd;
+}
+.information ul{
+	list-style: none;
 }
 .copyright{
-	margin-bottom:0;
-	position: absolute;
-    top:580px;
-    margin-left:32%;
-    margin-right:30%;
-    color:#bbb;
-    list-style: none;
+	position:absolute;
+	bottom: -130px;
+	left: 0;
+	right: 0;
+	font-size:16px;
+	color:#999;
+	margin: auto;
 }
-
-.imformation ul li h1{
-	font-size:45px;
-	color:#0b9;
-	font-family"微软雅黑"
-}
-.imformation ul li p,h1{
-	text-align: left;
-	}
-.imformation ul{
-	padding: 0;
-}
-footer{
-	width: 100%;
-	height: 20px;
+.copyright p{
 	text-align: center;
-	margin-bottom: 0px;
-	padding: 0;
-	color:#bbb;
 }
-footer ul{
-	list-style: none;
+.contact-1 .contact-2 .information h1{
+	position: relative;
+	top:20px;
+	font-size: 40px;
+	font-family: "微软雅黑";
+	color:#65dcaf;
 }

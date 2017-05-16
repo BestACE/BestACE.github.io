@@ -6,9 +6,9 @@ $(function() {
 		function() {
 			m_st = Math.max(document.body.scrollTop || document.documentElement.scrollTop);
 			if(m_st > pageHeight) {
-				$('.imgalist').fadeIn("slow");
+				$('.imga1').fadeIn("slow");
 			} else {
-				$('.imgalist').fadeOut("slow");
+				$('.imga1').fadeOut("slow");
 			}
 		}
 	);

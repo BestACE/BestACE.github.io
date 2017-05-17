@@ -59,6 +59,8 @@ html, body {min-height: 100vh;}
 	background-image: url(../img/home/menu2.jpg);
 	background-repeat: no-repeat;
 	position: relative;
+	background-size: cover;
+	background-position:center bottom;
 }
 
 .home img {
@@ -70,6 +72,7 @@ html, body {min-height: 100vh;}
 	right: 0;
 	left: 0;
 	bottom: 100px;
+	
 }
 
 
@@ -84,11 +87,12 @@ html, body {min-height: 100vh;}
 	background-image: url(../img/about/about.jpg);
 	position: relative;
 	background-repeat:no-repeat;
-	width: 100%;
+	min-width:1200px;
 	height: 758px;
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
+	background-size: cover;
+	background-position:center bottom;
 }
 .about input{
  display: none;
@@ -333,7 +337,7 @@ html, body {min-height: 100vh;}
 /*工作经历*/
 @import url('https://fonts.googleapis.com/css?family=Palanquin+Dark:400,600');
 
-* {
+.job * {
 	outline:none;
  -webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -347,8 +351,9 @@ html, body {min-height: 100vh;}
 	color: #fff;
 	font-family: 'Palanquin Dark';
 	/*width: auto;*/
-	width: 100%;
-	
+	min-width:1200px;
+	background-size: cover;
+	background-position:center bottom;
 	position: relative;
 }
 /*.job img{
@@ -489,6 +494,8 @@ html, body {min-height: 100vh;}
 	min-height: 758px;
 /*	background-size:100% auto;*/
 	position: relative;
+	background-size: cover;
+	background-position:center bottom;
 }
 .business2{
 	position: absolute;
@@ -625,7 +632,9 @@ html, body {min-height: 100vh;}
 	position: relative;
 	background-image: url(../img/contact/contact2.jpg);
 	background-repeat: no-repeat;
-	width: 100%;
+	min-width: 1200px;
+	background-size: cover;
+	background-position:center bottom;
 	height:758px;
 }
 .contact-1 .contact-2{

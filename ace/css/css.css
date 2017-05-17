@@ -649,13 +649,14 @@ html, body {min-height: 100vh;}
 }
 .erweima{
 	display: inline-block;
-	border: 1px solid #000;
+	border: 1px solid transparent;
 	width:220px;
 	height:220px;
-	margin-left:90px ;
+	margin-left:90px;
 }
 .erweima img{
 	width: 220px;
+	background-color: #999999;
 }
 .information{
 	display: inline-block;
@@ -689,7 +690,7 @@ html, body {min-height: 100vh;}
 }
 .contact-1 .contact-2 .information h1{
 	position: relative;
-	top:20px;
+	top:5px;
 	font-size: 40px;
 	font-family: "微软雅黑";
 	color:#65dcaf;

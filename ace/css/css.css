@@ -6,7 +6,7 @@
 body {
 	padding: 0;
 	margin: 0;
-	min-width: 1200px;
+	width:100%;
 }
 html, body {min-height: 100vh;}
 
@@ -53,9 +53,8 @@ html, body {min-height: 100vh;}
 }
 
 .home {
-	/*width: 100%;*/
+	width: 100%;
 	height: 758px;
-	min-width: 1200px;
 	background-image: url(../img/home/menu2.jpg);
 	background-repeat: no-repeat;
 	position: relative;
@@ -87,7 +86,7 @@ html, body {min-height: 100vh;}
 	background-image: url(../img/about/about.jpg);
 	position: relative;
 	background-repeat:no-repeat;
-	min-width:1200px;
+	width:100%;
 	height: 758px;
 	margin: 0;
 	padding: 0;
@@ -350,8 +349,7 @@ html, body {min-height: 100vh;}
 	background-repeat: no-repeat;
 	color: #fff;
 	font-family: 'Palanquin Dark';
-	/*width: auto;*/
-	min-width:1200px;
+	width:100%;
 	background-size: cover;
 	background-position:center bottom;
 	position: relative;
@@ -490,7 +488,7 @@ html, body {min-height: 100vh;}
 .business {
 	background-image: url(../img/business/business2.jpg);
 	background-repeat: no-repeat;
-	min-width: 1200px;
+	width:100%;
 	min-height: 758px;
 /*	background-size:100% auto;*/
 	position: relative;
@@ -632,7 +630,7 @@ html, body {min-height: 100vh;}
 	position: relative;
 	background-image: url(../img/contact/contact2.jpg);
 	background-repeat: no-repeat;
-	min-width: 1200px;
+	width:100%;
 	background-size: cover;
 	background-position:center bottom;
 	height:758px;

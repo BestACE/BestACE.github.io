@@ -1515,53 +1515,77 @@
 							/*case1*/
 							.contact {
 								width: 100%;
-								height: 594px;
+								height: 470px;
 							}
 							.contact .case-1 {
-								height: 42%;
+								height: 50%;
+								background-size: cover;
 							}
 							.contact .case-1 .neirong {
-								width: 73%;
-								height: 47%;
+								position: absolute;
+								top: 0;
+								bottom: 0;
+								left: 0;
+								right: 0;
+								width: 100%;
+								height: 80%;
 							}
 							.contact .case-1 .neirong .erweima {
-								/*border: 1px solid #000;*/
-								width: 40%;
-								height: 100%;
-								float: left;
+								width: 35%;
+								height: 66%;
+								position: absolute;
+								top: 0;
+								bottom: 0;
+								left: 0;
+								right: 40%;
+								margin: auto;
+							}
+							.contact .case-1 .neirong .erweima img {
+								height: auto;
 							}
 							.contact .case-1 .neirong .information {
-								width: 53%;
+								width: 45%;
 								height: 100%;
-								float: right;
+								position: absolute;
+								top: 30%;
+								bottom: 0;
+								left: 50%;
+								right: 0;
+								margin: auto;
 							}
 							.contact .case-1 .neirong .information h1 {
 								font-size: 18px;
 								margin-top: 0;
-								margin-bottom: 5px;
+								margin-bottom: 12px;
 								color: #066;
 							}
 							.contact .case-1 .neirong .information p {
 								font-size: 3px;
-								margin: 5px 0;
+								width: 90%;
+								margin: 8px 0;
 								color: #fff;
 							}
 							/*case2*/
 							.contact .case-2 {
 								width: 100%;
-								height: 75%;
+								height: 63%;
 							}
 							.contact .case-2 .form {
 								width: 100%;
 								height: 40%;
 							}
 							.contact .case-2 .form input {
-								border-top: 1px solid #666;
+								margin-top: 20px;
+								border:1px solid rgba(0,0,0,.2);
+								box-shadow: 0px 0px 1px 1px rgba(0,0,0,.5);
 								width: 47%;
 								height: 20%;
 							}
 							.contact .case-2 .form textarea {
 								border-top: 1px solid #666;
+								margin-bottom: 2%;
+								border:1px solid rgba(0,0,0,.2);
+								box-shadow: 0px 0px 1px 1px rgba(0,0,0,.5);
 							}
 							.contact .case-2 .form h1 {
 								margin-top: -61px;
@@ -1569,7 +1593,7 @@
 							}
 							.contact .case-2 .form #send {
 								width: 15%;
-								height: 14%;
+								height: 20%;
 							}
 							/*footer*/
 							.contact footer.footer {
@@ -1587,6 +1611,9 @@
 							.contact {
 								width: 100%;
 								height: 950px;
+							}.contact .case-1{
+								height: 51%;
+								background-size: cover;
 							}
 							.contact .case-1 .neirong .information {
 								width: 53%;
@@ -1606,7 +1633,7 @@
 							}
 							/*case2*/
 							.contact .case-2 {
-								height: 53%;
+								height: 72%;
 							}
 							/*footer*/
 							.contact footer.footer {

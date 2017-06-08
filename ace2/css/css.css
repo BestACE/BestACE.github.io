@@ -582,12 +582,12 @@ ul{
 }
 .contact {
 	width: 100%;
-	height: 1250px;
+	height: 758px;
 }
 .contact .case-1 {
 	width: 100%;
-	height: 72%;
-	background: url(../img/contact/contact-bg1.jpg) no-repeat;
+	height: 53%;
+	background: url(../img/contact/bg.jpg) no-repeat top center;
 	background-size: 100%;
 	position: relative;
 }
@@ -595,7 +595,6 @@ ul{
 .contact .case-2 {
 	width: 100%;
 	height: 72%;
-	border-bottom: none;
 	position: relative;
 }
 
@@ -612,7 +611,7 @@ ul{
 /*设置位置的容器*/
 
 .contact .case-1 .neirong {
-	width: 65%;
+	width: 43%;
 	height: 40%;
 	position: absolute;
 	top: 0;
@@ -626,7 +625,7 @@ ul{
 /*二维码模块*/
 
 .contact .case-1 .neirong .erweima {
-	width: 40%;
+	width: 33%;
 	height: 100%;
 	float: left;
 }
@@ -646,15 +645,15 @@ ul{
 }
 
 .contact .case-1 .neirong .information h1 {
-	font-size: 60px;
+	font-size: 30px;
 	margin-top: 0;
 	margin-bottom: 20px;
 	color: #066;
 }
 
 .contact .case-1 .neirong .information p {
-	font-size: 32px;
-	margin: 15px 0;
+	font-size: 15px;
+	margin: 5px 0;
 	color: #fff;
 }
 
@@ -668,7 +667,6 @@ ul{
 /*标题*/
 
 .contact .case-2 .form .title {
-	/*border: 1px solid #000;*/
 	width: 200px;
 	height: 50px;
 	position: absolute;
@@ -680,8 +678,7 @@ ul{
 
 .contact .case-2 .form h1 {
 	font-size: 40px;
-	margin-top: 20px;
-	margin-bottom: 40px;
+    margin-top: 0px;
 	text-align: center;
 	color: #777;
 }

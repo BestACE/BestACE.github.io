@@ -109,7 +109,6 @@ ul{
 		box-sizing: border-box;
 	}
 	.about {
-		background-image: url(../img/about/about3.jpg);
 		position: relative;
 		background-repeat: no-repeat;
 		width: 100%;
@@ -222,7 +221,7 @@ ul{
 	.tab_content {
 		position: absolute;
 		right: -30px;
-		bottom: 150px;
+		top: 150px;
 		width: 600px;
 		color: #fff;
 	}
@@ -231,7 +230,7 @@ ul{
 		width: 450px;
 		/*height: 800px;*/
 		left: 75px;
-		bottom: 120px;
+		top: 120px;
 	}
 	.tab-content figure img {
 		width: 100%;

@@ -610,12 +610,12 @@ ul{
 /*设置位置的容器*/
 
 .contact .case-1 .neirong {
-	width: 43%;
-	height: 40%;
+	width: 45%;
+	height: 56%;
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	left: 30px;
+	left: 0;
 	right: 0;
 	margin: auto;
 }
@@ -625,34 +625,33 @@ ul{
 
 .contact .case-1 .neirong .erweima {
 	width: 33%;
-	height: 100%;
 	float: left;
 }
 
 .contact .case-1 .neirong .erweima img {
 	width: 100%;
-	height: 100%;
 }
 
 
 /*联系信息模块*/
 
 .contact .case-1 .neirong .information {
-	width: 53%;
-	height: 100%;
+	width: 55%;
 	float: right;
 }
 
 .contact .case-1 .neirong .information h1 {
-	font-size: 30px;
-	margin-top: 0;
-	margin-bottom: 20px;
+	font-size: 40px;
+	margin-top:0;
 	color: #066;
+	font-weight:bolder;
+	line-height:40px;
 }
 
 .contact .case-1 .neirong .information p {
-	font-size: 15px;
-	margin: 5px 0;
+	font-size: 20px;
+	line-height:20px;
+	margin: 10px 0;
 	color: #fff;
 }
 

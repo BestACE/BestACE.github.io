@@ -1,4 +1,4 @@
-.clearfix::after{
+﻿.clearfix::after{
 	content: "";
 	display: block;
 	clear: both;
@@ -675,15 +675,19 @@ html, body {min-height: 100vh;}
 }
 .copyright{
 	position:absolute;
-	bottom: -130px;
-	left: 0;
-	right: 0;
-	font-size:16px;
-	color:#999;
+	width: 500px;
+    bottom: 0;
+    left: 0;
+    right: 0;
 	margin: auto;
+	color:#999;
+}
+.copyright ul{
+	list-style: none;
 }
 .copyright p{
 	text-align: center;
+	font-size: 16px;
 }
 .contact-1 .contact-2 .information h1{
 	position: relative;

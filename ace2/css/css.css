@@ -36,8 +36,9 @@ header{
 	transition: all .5s;
 }
 header.on{
-	padding: 10px 0px;	
+	padding: 0 0px;	
 	background-color: rgba(0,0,0,.8);
+	height: 60px;
 }
 ul{
 	margin: 0;
@@ -52,7 +53,6 @@ ul{
 	width: 150px;
 	margin-top: -40px;
 	left: 50px;
-	
 }
 #menuf ul li a{
 	text-decoration: none;

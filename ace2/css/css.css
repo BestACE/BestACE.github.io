@@ -36,8 +36,9 @@ header{
 	transition: all .5s;
 }
 header.on{
-	padding: 10px 0px;	
+	padding: 0 0px;	
 	background-color: rgba(0,0,0,.8);
+	height: 60px;
 }
 ul{
 	margin: 0;
@@ -52,7 +53,6 @@ ul{
 	width: 150px;
 	margin-top: -40px;
 	left: 50px;
-	
 }
 #menuf ul li a{
 	text-decoration: none;
@@ -109,7 +109,6 @@ ul{
 		box-sizing: border-box;
 	}
 	.about {
-		background-image: url(../img/about/about3.jpg);
 		position: relative;
 		background-repeat: no-repeat;
 		width: 100%;
@@ -222,7 +221,7 @@ ul{
 	.tab_content {
 		position: absolute;
 		right: -30px;
-		bottom: 150px;
+		top: 150px;
 		width: 600px;
 		color: #fff;
 	}
@@ -231,7 +230,7 @@ ul{
 		width: 450px;
 		/*height: 800px;*/
 		left: 75px;
-		bottom: 120px;
+		top: 120px;
 	}
 	.tab-content figure img {
 		width: 100%;
@@ -611,12 +610,12 @@ ul{
 /*设置位置的容器*/
 
 .contact .case-1 .neirong {
-	width: 43%;
-	height: 40%;
+	width: 45%;
+	height: 56%;
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	left: 30px;
+	left: 0;
 	right: 0;
 	margin: auto;
 }
@@ -626,34 +625,37 @@ ul{
 
 .contact .case-1 .neirong .erweima {
 	width: 33%;
-	height: 100%;
 	float: left;
 }
 
 .contact .case-1 .neirong .erweima img {
 	width: 100%;
+<<<<<<< HEAD
 //	height: 100%;
+=======
+>>>>>>> origin/master
 }
 
 
 /*联系信息模块*/
 
 .contact .case-1 .neirong .information {
-	width: 53%;
-	height: 100%;
+	width: 55%;
 	float: right;
 }
 
 .contact .case-1 .neirong .information h1 {
-	font-size: 30px;
-	margin-top: 0;
-	margin-bottom: 20px;
+	font-size: 40px;
+	margin-top:0;
 	color: #066;
+	font-weight:bolder;
+	line-height:40px;
 }
 
 .contact .case-1 .neirong .information p {
-	font-size: 15px;
-	margin: 5px 0;
+	font-size: 20px;
+	line-height:20px;
+	margin: 10px 0;
 	color: #fff;
 }
 

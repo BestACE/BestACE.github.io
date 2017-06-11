@@ -1,4 +1,4 @@
-.clearfix::after {
+﻿.clearfix::after {
 	content: "";
 	display: block;
 	clear: both;
@@ -632,7 +632,7 @@ ul{
 
 .contact .case-1 .neirong .erweima img {
 	width: 100%;
-	height: 100%;
+//	height: 100%;
 }
 
 

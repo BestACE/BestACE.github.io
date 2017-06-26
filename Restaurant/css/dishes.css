@@ -1,0 +1,218 @@
+header{
+	background-color: #282828;
+}
+.menu li.bottom{
+	width: 50px;
+	height: 3px;
+	background-color: #ff5c00;
+	position:absolute;
+	bottom: 0px;
+	left: 225px;
+	transition:left .5s;
+}
+.menu li:nth-child(2):hover~li.bottom{
+	left:125px;
+}
+.menu li:nth-child(1):hover~li.bottom{
+	left: 25px;
+}
+.menu li:nth-child(4):hover~li.bottom{
+	left:325px;
+}
+
+.carte{
+	background-color: #282828;
+	color: white;
+	padding: 60px;
+	position: relative;
+}
+/*居中容器开始*/
+.carte-container{
+	width: 1200px;
+	height: 1100px;
+	margin: auto;
+}
+/*居中容器结束*/
+/*菜类选择导航开始*/
+.carte-container .carte-menu label{
+	display: block;
+	position: relative;
+	margin-right: 150px;
+	margin-bottom: 50px;
+	width: 300px;
+	height: 300px;
+	border-radius: 100%;
+	box-shadow: 0 0 15px 4px rgba(0,0,0,.5);
+	overflow: hidden;
+	float: left;
+	cursor: pointer;
+}
+.carte-container .carte-menu label img{
+	width: 100%;
+	height: 100%;
+}
+.carte-container .carte-menu label:nth-of-type(3){
+	margin-right: 0;
+}
+.carte-container .carte-menu label:before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 300px;
+	height: 300px;
+	border-radius: 100%;
+	background-color: rgba(0,0,0,.5);
+	transition: background-color .3s;
+}
+.carte-container .carte-menu label figcaption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	text-align: center;
+	line-height: 300px;
+	font-size: 80px;
+}
+.carte-container .carte-menu label:hover:before{
+	background-color: rgba(253,107,24,.9);
+}
+.carte-content{
+	width: 1200px;
+	height: 750px;
+	overflow: hidden;
+	position: absolute;
+	bottom: 50px;
+	transition: opacity .3s;
+}
+.carte-container input{
+	display: none;
+}
+#tab1:checked~.carte-menu>#figure1:before{
+	background-color: rgba(253,107,24,.9);
+}
+#tab2:checked~.carte-menu>#figure2:before{
+	background-color: rgba(253,107,24,.9);
+}		
+#tab3:checked~.carte-menu>#figure3:before{
+	background-color: rgba(253,107,24,.9);
+}
+#tab1:checked~#carte-content-1{
+	opacity: 1;
+	z-index: 2;
+}
+#tab1:checked~#carte-content-2{
+	opacity: 0;
+	z-index: 1;
+}
+#tab1:checked~#carte-content-3{
+	opacity: 0;
+	z-index: 1;
+}
+#tab2:checked~#carte-content-2{
+	opacity: 1;
+	z-index: 2;
+}
+#tab2:checked~#carte-content-1{
+	opacity: 0;
+	z-index: 1;
+}
+#tab2:checked~#carte-content-3{
+	opacity: 0;
+	z-index: 1;
+}
+#tab3:checked~#carte-content-3{
+	opacity: 1;
+	z-index: 2;
+}
+#tab3:checked~#carte-content-2{
+	opacity: 0;
+	z-index: 1;
+}
+#tab3:checked~#carte-content-1{
+	opacity: 0;
+	z-index: 1;
+}
+/*菜类选择导航结束*/
+.carte-container-c{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 4800px;
+	height: 750px;
+}
+.carte-content-x{
+	float: left;
+	background-color: #282828;
+	width: 1200px;
+	height: 630px;	
+}
+#carte-content-1{
+	z-index: 3;
+}
+.carte-content-x figure{
+	width: calc(1050px / 4);
+	height: calc(1050px / 4 * 1.2);
+	overflow: hidden;
+	float: left;
+	margin: 0 50px 0 0;
+	position: relative;
+	text-align: center;
+}
+.carte-content-x figure:nth-of-type(4n){
+	margin-right: 0;
+}
+.carte-content-x figure img{
+	width: 100%;
+	height: 75%;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+.carte-content-x figure figcaption{
+	display: inline-block;
+	cursor: pointer;
+}
+.carte-num{
+	text-align: center;
+	display: block;
+	width: 1200px;
+	position: absolute;
+	left: 0;
+	bottom: 50px;
+}
+.carte-num i{
+	font-style: normal;
+	cursor: pointer;
+}
+.carte-num i:not(.pageNum){
+	color: rgb(255,255,255);
+}
+.pageNum{
+	color: rgba(255,255,255,.3);
+}
+.navActive{
+	color: white;
+}
+.carte-num i:not(.fa):hover{
+	color: white;
+}
+
+/*footer*/
+footer{
+	background-color: #282828;
+	text-align: center;
+	height: 40px;
+	
+}
+footer p{
+	display: inline-block;
+	padding-right: 30px;
+	color: #fff;
+	font-size: 13px;
+	margin: 0;
+	line-height: 40px;
+	/*margin-bottom: 0;*/
+}

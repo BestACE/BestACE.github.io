@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+        <link href="https://cdn.bootcss.com/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="font/css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="font/css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/homepage.css"/>
+        <link rel="stylesheet" type="text/css" href="css/about.css"/>
+	</head>
+	<body>
+		<!--首页-->
+		<header class="fixed">
+	        <div class="container clearfix">
+	        	<div class="logo">
+                    <img src="img/logo.png" alt="" />
+	        	</div>	        
+				<div class="menu">
+					<ul class="clearfix">
+						<li><a href="banner.html">首页</a></li>
+						<li><a href="activity.html">活动</a></li>
+						<li><a href="dishes.html">菜品</a></li>
+						<li><a href="about.html">关于</a></li>
+						<li class="bottom"></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="about">
+				<div class="about_content">
+					<h1>关于</h1>
+					<p>
+						简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介
+						简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介
+						简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介
+						简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介
+						简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介
+						简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介
+						简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介
+						简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介
+						
+					</p>
+					<div class="img">
+						<p>营业时间：早上 8:00 至 晚上 9:00</p>
+						<p>周一 至 周日</p>
+						<!--轮番图-->
+						<div id="Carousel">
+							<ul id="Carousel_ul">
+								<li class="Carousel_li"><img src="img/about/1.jpg" alt="" /></li>
+								<li class="Carousel_li"><img src="img/about/2.jpg" alt="" /></li>
+								<li class="Carousel_li"><img src="img/about/3.jpg" alt="" /></li>
+								<li class="Carousel_li"><img src="img/about/4.jpg" alt="" /></li>
+								<li class="Carousel_li"><img src="img/about/5.jpg" alt="" /></li>
+								<li class="Carousel_li"><img src="img/about/6.jpg" alt="" /></li>
+								<li class="Carousel_li"><img src="img/about/7.jpg" alt="" /></li>
+							</ul>
+						</div>
+						<p>酒楼内景展示</p>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<p>联系方式：2571-82625412</p>
+			<p>地址：浙江省杭州市萧山区城河街48号</p>
+			<p>&copy;市心酒楼 版权所有</p>			
+		</footer>
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+		<script>
+			var w=parseInt($("#Carousel").css("width"));
+			var li = document.getElementsByClassName("Carousel_li");
+			var n = -li.length + 2;
+			$(".Carousel_li").css("width",w/2.5);
+			var liw=parseInt($(".Carousel_li").css("width"));
+			$("#Carousel_ul").css("width",liw*(li.length+0.5));
+			var l = -liw;
+//			alert(l);
+			setInterval(function move(){
+				$("#Carousel_ul").animate({
+					left: l
+				},3000,"linear");
+				if(l == -Math.abs(n*liw)){
+					liw=-liw;
+				}
+				if(l == 0 ){
+					liw=-liw;
+				}
+				l=l-liw;
+			},1000);
+		</script>
+	</body>
+</html>

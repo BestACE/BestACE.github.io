@@ -1,0 +1,69 @@
+/*全局*/
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.clearfix::after{
+	content:"";
+	display:table;
+	clear:both;
+}
+li{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	max-width: 1200px;
+	margin: auto;
+}
+/*header*/
+header{
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 5;
+}
+.logo{
+	float: left;
+	height: 60px;
+}
+.logo img{
+	margin: calc(25px/2) 0;
+	height: 35px;
+	
+}
+.menu{
+	float: right;
+	position: relative;
+}
+.menu ul li{
+	float: left;
+	width: 100px;
+	padding: 0 25px;
+}
+.menu ul li:nth-child(4){
+	margin-right: 0;
+}
+.menu ul li a{
+	display: block;
+	text-align: center;
+	width: 50px;
+	color:lightgray;
+	line-height: 60px;
+	font-size: 1.2em;
+	transition: color .5s;
+}
+.menu ul li:hover a{
+	color:#fff;
+}
+
+

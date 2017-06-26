@@ -1,0 +1,123 @@
+header{
+	background-color: rgba(40,40,40,0.5);
+}
+.menu li.bottom{
+	width: 50px;
+	height: 3px;
+	background-color: #ff5c00;
+	position:absolute;
+	bottom: 0px;
+	left: 325px;
+	transition:left .5s;
+}
+.menu li:nth-child(2):hover~li.bottom{
+	left:125px;
+}
+.menu li:nth-child(3):hover~li.bottom{
+	left: 225px;
+}
+.menu li:nth-child(1):hover~li.bottom{
+	left:25px;
+}
+/*about*/
+.about{
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	background-image: url(../img/about/about1.jpg);
+	width: 100%;
+	/*height: 758px;*/
+}
+.about {
+	color: #fff;
+}
+.about .about_content{
+	/*border: 1px solid #fff;*/
+	width: 35%;
+	position: fixed;
+	right: 120px;
+	top: 120px;
+	height: 80%;
+	margin: auto;
+}
+.about .about_content h1{
+	text-align: center;
+	color: #ff5c00;
+}
+.about .about_content h1~p{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-indent: 2em;
+}
+.about .about_content .img{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50%;
+	bottom: 10%;
+	margin: auto;
+	border-top: 2px solid #ff5c00;
+}
+.about .about_content .img p{
+	text-align: left;
+	margin: 20px 0 0;
+}
+.about .about_content .img p~p{
+	text-indent: 5em;
+	margin-top: 5px;
+}
+.about .about_content .img #Carousel{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 20%;
+	bottom: 5%;
+	margin: auto;
+	overflow: hidden;
+	/*height: 200px;*/
+}
+.about .about_content .img #Carousel ul{
+	position: absolute;
+	left: 0;
+	margin: 50px 0 0;
+	width: 1000%;
+}
+.about .about_content .img #Carousel ul li{
+	display: inline-block;
+	width: 10px;
+}
+.about .about_content .img #Carousel ul li img{
+	width: 100%;
+}
+.about .about_content .img #Carousel~p{
+	position: absolute;
+	bottom: -10px;
+	right: 0;
+}
+/*footer*/
+footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background-color: rgba(40,40,40,0.5);
+	text-align: center;
+	height: 40px;
+}
+footer p{
+	display: inline-block;
+	padding-right: 30px;
+	color: #fff;
+	font-size: 13px;
+	margin: 0;
+	line-height: 40px;
+	/*margin-bottom: 0;*/
+}

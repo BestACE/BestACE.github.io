@@ -5,8 +5,7 @@
 		<meta charset="utf-8" />
 		<title></title>
 		<link href="https://cdn.bootcss.com/normalize/7.0.0/normalize.min.css" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="font/css/font-awesome.css" />
-		<link rel="stylesheet" type="text/css" href="font/css/font-awesome.min.css" />
+		<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/homepage.css" />
 		<link rel="stylesheet" type="text/css" href="css/banner.css"/>
 	</head>
@@ -31,21 +30,25 @@
 		</header>
 		<main>
 			<section>
-				<div class="home">
-					<div class="slider">
-						<div class="slider-img">
-							<ul class="slider-img-ul clearfix">
-								<li><img src="img/banner/slider-3.jpg"></li>
-								<li><img src="img/banner/home.jpg"></li>
-								<li><img src="img/banner/slider-2.jpg"></li>
-								<li><img src="img/banner/slider-3.jpg"></li>
-								<li><img src="img/banner/home.jpg"></li>
-							</ul>
-						</div>
+				
+				<div id="slideshow">
+			  		<!-- 插入轮播的图片们 -->
+					<img class="active" src="img/banner/home.jpg" />
+			 		<img src="img/banner/slider-3.jpg" />
+			 		<img src="img/banner/slider-2.jpg" />
+				
+			  	<!--三个小圆点按钮-->
+				  	<div>
+				    	<span class="active" name="0"></span>
+						<span name="1"></span>
+						<span name="2"></span>
 					</div>
+				<!--插入左边和右边的按钮框-->
+					<p class="left">&lt;</p>
+					<p class="right">&gt;</p>
 				</div>
+			  	
 			</section>
-			
 			<section>
 				<div class="Div">
 					<b class="Div1_prev Div1_prev1"><img src="img/banner/left.png" title="上一页" /></b>
@@ -72,35 +75,34 @@
 							</div>
 							<div class="clearfix">
 								<span>
-            	                      <a href="javascript:void(0)" class="Div1_main_a1"><img src="img/banner/pexels-photo-327124.jpeg" /></a>
+            	                     <a href="javascript:void(0)" class="Div1_main_a1"><img src="img/banner/pexels-photo-326131.jpeg" /></a>
                                 </span>
 
 								<span>
-            	                      <a href="javascript:void(0)" class="Div1_main_a1"><img src="img/banner/pexels-photo-436784.jpeg" /></a>
+            	                     <a href="javascript:void(0)" class="Div1_main_a1"><img src="img/banner/pexels-photo-327124.jpeg" /></a>
                                 </span>
 
 								<span>
-            	                      <a href="javascript:void(0)" class="Div1_main_a1"><img src="img/banner/pexels-photo-326131.jpeg" /></a>
+            	                     <a href="javascript:void(0)" class="Div1_main_a1"><img src="img/banner/pexels-photo-423004.jpeg" /></a>
                                 </span>
-
 								<span>
-            	                      <a href="javascript:void(0)" class="Div1_main_a1"><img src="img/banner/pexels-photo-327124.jpeg" /></a>
+            	                     <a href="javascript:void(0)" class="Div1_main_a1"><img src="img/banner/pexels-photo-436784.jpeg" /></a>
                                 </span>
 							</div>
 							<div class="clearfix">
 								<span class="Div1_main_span1">
-            	                       <a href="javascript:void(0)" class="Div1_main_a1"><img src="img/banner/pexels-photo-326131.jpeg" /></a>
+            	                     <a href="javascript:void(0)" class="Div1_main_a1"><img src="img/banner/pexels-photo-326131.jpeg" /></a>
                                 </span>
 
 								<span>
-            	                       <a href="javascript:void(0)" class="Div1_main_a1"><img src="img/banner/pexels-photo-327124.jpeg" /></a>
+            	                     <a href="javascript:void(0)" class="Div1_main_a1"><img src="img/banner/pexels-photo-327124.jpeg" /></a>
                                 </span>
 
 								<span>
-            	                       <a href="javascript:void(0)" class="Div1_main_a1"><img src="img/banner/pexels-photo-423004.jpeg" /></a>
+            	                     <a href="javascript:void(0)" class="Div1_main_a1"><img src="img/banner/pexels-photo-423004.jpeg" /></a>
                                 </span>
 								<span>
-            	                       <a href="javascript:void(0)" class="Div1_main_a1"><img src="img/banner/pexels-photo-436784.jpeg" /></a>
+            	                     <a href="javascript:void(0)" class="Div1_main_a1"><img src="img/banner/pexels-photo-436784.jpeg" /></a>
                                 </span>
 							</div>
 						</div>
@@ -133,6 +135,7 @@
 		<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
 		<script type="text/javascript" src="js/xSlider.js"></script>
 		<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+		<script src="js/jss.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 
 </html>

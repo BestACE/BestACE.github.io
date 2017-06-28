@@ -1,0 +1,284 @@
+/*
+ * 全局
+ */
+*{
+	box-sizing: border-box;
+}
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+a{
+	text-decoration: none;
+	color: #000;
+	margin: 0;
+}
+li{
+	list-style-type: none;
+}
+body{
+	/* 设置默认文本颜色，背景和字体堆栈 */
+	font-size:0.825em;
+	font-family:Arial, Helvetica, sans-serif;
+}
+/*
+ * 导航条效果
+ */
+.menu li.bottom{
+	width: 35px;
+	height: 3px;
+	background-color: #ff5c00;
+	position:absolute;
+	bottom: 0px;
+	left: 140px;
+	transition:left .5s;
+}
+.menu li:nth-child(1):hover~li.bottom{
+	left:40px;
+}
+.menu li:nth-child(3):hover~li.bottom{
+	left: 240px;
+}
+.menu li:nth-child(4):hover~li.bottom{
+	left:340px;
+}
+/*
+ * 轮播图
+ */
+#slideshow{
+  width: 100%;  
+  /*height: 900px;*/
+  margin:60px auto 0 auto; /*设置在页面水平居中*/
+  overflow: hidden;
+  position: relative;  
+}
+#slideshow img{
+  width: 100%;
+  height: 100%;
+  position: absolute; /*图片采取绝对定位，均位于左上角，重叠在一起*/
+  top: 0;
+  left: 0;
+  opacity: 0; /*初始不透明度为0，图片都看不见*/
+  transition: opacity 1s linear; /*--重点--定义一个关于透明度的transition*/
+}
+#slideshow img.active{
+  opacity: 1; /*有active类的图片不透明度为1，即显示图片*/
+}
+/*-- 设置页码的样式 --*/
+#slideshow div{
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  padding: 5px;
+  margin-left: -57.5px; /*水平居中，算出来宽度是115px*/
+  border-radius: 25px;
+  background: rgba(255,255,255,0.3);
+}
+#slideshow span{
+  float: left;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px; /*设置页码为圆形*/
+  margin: 0 10px;
+  background: white;
+}
+#slideshow span.active{
+  background: #FFDD55;
+}
+
+
+
+/*-- 设置左右按钮框的样式 --*/
+#slideshow p{
+  width: 30px;
+  line-height: 80px;
+  position: absolute;
+  top: 50%;
+  margin-top: -40px; /*设置垂直居中*/
+  color: white;
+font-family:  "楷体";
+  font-size: 50px;
+  text-align: center;
+  cursor: pointer; /*设置鼠标*/
+  /*设置不能选择文本*/
+  -ms-user-select:none;/*IE10*/
+  -webkit-user-select:none;/*webkit浏览器*/
+  user-select:none;
+  display: block;
+  opacity: 0;
+  transition: opacity .4s;
+}
+#slideshow p.left{
+  left: 20px;
+}
+#slideshow p.right{
+  right: 20px;
+}
+#slideshow:hover p{
+	opacity: 1;
+}
+
+/*
+ * 活动详情
+ */
+.activity{
+	width: 1200px;
+	margin: auto;
+	padding: 0;
+	/*text-align: center;*/	
+}
+.activity h1,
+.activity p{
+	text-align: center;
+	color: #FD5D00;
+	margin: 0;
+}
+.activity h1{
+	margin-top: 30px;
+}
+#main{
+	/*主容器div*/
+	position:relative;
+	margin:30px auto 50px;
+	width:1100px;
+	-moz-border-radius:12px;
+	-webkit-border-radius:12px;
+	border-radius:12px;
+}
+
+#holder{
+	/* 要分割成页面的无序列表 */
+	margin: 0;
+	padding: 0;
+	width:100%;
+	overflow:hidden;
+	position:relative;
+	/*padding-bottom:10px;*/
+}
+#holder li{
+ width: 100%;
+}
+
+#holder li span{
+	float: right;
+	color: #000;
+}
+.swControls{
+	position:absolute;
+	margin-top:10px;
+}
+
+a.swShowPage{
+
+	/* 启动页面幻灯片的链接 */
+
+	background-color:#444444;
+	float:left;
+	height:15px;
+	margin:4px 3px;
+	text-indent:-9999px;
+	width:15px;
+	
+	/* CSS3圆角 */
+	
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border-radius:7px;
+}
+
+a.swShowPage:hover,
+a.swShowPage.active{
+	background-color:#FF5C00;
+	
+	/*	CSS3内影 */
+	
+	/*-moz-box-shadow:0 0 7px #1e435d inset;*/
+	/*-webkit-box-shadow:0 0 7px #1e435d inset;*/
+	/*box-shadow:0 0 7px #1e435d inset;*/
+}
+
+#holder li{
+	width: 98%;
+	list-style:none outside none;
+	margin:5px;
+	height: 280px;
+	float:left;
+
+	/* 常规CSS3框阴影（不插图）： */
+
+	-moz-box-shadow:0 0 4px #111111;
+	-webkit-box-shadow:0 0 4px #111111;
+	box-shadow:0 0 4px #111111;
+}
+#holder li #sideimg{
+	width: 70%;
+	height: 280px;
+	overflow: hidden;
+	border-right: 6px solid #FFDD55;
+	margin: 0;
+	float: left;	
+}
+#holder li #sideimg img{
+	width: 100%;
+	height: 280px;
+	border-radius: 7px 0 0 7px;
+}
+#holder li .content{
+	width: 30%;
+	height: 100%;
+	float: right;
+	margin: 0;
+	position: relative;
+}
+#holder li .content h3,
+#holder li .content h2{
+	display: block;
+	margin-left: 20px;
+	margin-right:20px;
+	color: #878787;
+}
+#holder li .content h2{
+	height: 40px;
+	margin-top: 20px;
+	border-bottom: 1px solid;
+	color: #000;
+}
+#holder li .content h2:hover{
+	color: #FF5C00;
+	border-bottom: 1px solid #000;
+}
+#holder li .details a{
+	display: block;
+	font-size:18px;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+	position: absolute;
+	right: 50px;
+	bottom: 30px;
+	background-color: rgba(255,92,0,.8);
+	border-radius: 4px;
+	box-shadow: 0 0 5px rgba(0,0,0,.5);	
+	transition: background-color .5s;	
+}
+#holder li .details a:hover{
+	box-shadow: 0 0 1px rgba(0,0,0,.3);
+}
+
+#holder li:nth-child(1){
+	margin-top: 3px;
+}
+#holder,
+#holder li{
+	/* 将圆角应用于持有人和持有人名单 */
+	border-radius: 8px;
+}
+
+.clear{
+	/* 这个类清除浮动元素 */
+	clear:both;
+}
+

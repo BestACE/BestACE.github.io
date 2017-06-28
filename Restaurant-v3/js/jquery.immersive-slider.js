@@ -12,7 +12,6 @@
  * ========================================================== */
 
 !function($){
-  
   var defaults = {
     animation: "bounce",
     slideSelector: ".slide",
@@ -200,14 +199,13 @@
       });
     }
    $(".isa-next").click(function() {
-     el.moveNext();
-     return false;
+   		el.moveNext();
+     	return false;
    });
    $(".isa-prev").click(function() {
      el.movePrev();
      return false;
    });
-    
     $.fn.moveSlider = function(settings, page_index) {
       var el = $(this),
           current = el.find(".is-slide.active"),

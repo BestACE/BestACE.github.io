@@ -67,3 +67,21 @@ header{
 	color:#fff;
 }
 
+
+/*footer*/
+
+footer {
+	background-color: #282828;
+	text-align: center;
+	height: 40px;
+}
+
+footer p {
+	display: inline-block;
+	padding-right: 30px;
+	color: #fff;
+	font-size: 13px;
+	margin: 0;
+	line-height: 40px;
+	/*margin-bottom: 0;*/
+}

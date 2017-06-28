@@ -25,23 +25,26 @@ body{
 /*
  * 导航条效果
  */
+header{
+	background-color: #282828;
+}
 .menu li.bottom{
-	width: 35px;
+	width: 50px;
 	height: 3px;
 	background-color: #ff5c00;
 	position:absolute;
 	bottom: 0px;
-	left: 140px;
+	left: 125px;
 	transition:left .5s;
 }
-.menu li:nth-child(1):hover~li.bottom{
-	left:40px;
+.menu li:nth-child(4):hover~li.bottom{
+	left:325px;
 }
 .menu li:nth-child(3):hover~li.bottom{
-	left: 240px;
+	left: 225px;
 }
-.menu li:nth-child(4):hover~li.bottom{
-	left:340px;
+.menu li:nth-child(1):hover~li.bottom{
+	left:25px;
 }
 /*
  * 轮播图

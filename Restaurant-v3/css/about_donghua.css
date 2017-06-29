@@ -1,0 +1,235 @@
+/*右移*/
+@keyframes topeaseinAnimate_left{
+    0%{ transform: translateX(-600px); opacity: 0;}
+    100%{ transform: translateX(0px); opacity: 1;}
+}
+@-webkit-keyframes topeaseinAnimate_left{
+    0%{ -webkit-transform: translateX(-600px); opacity: 0;}
+    100%{ -webkit-transform: translateX(0px); opacity: 1;}
+}
+@-o-keyframes topeaseinAnimate_left{
+    0%{ -webkit-transform: translateY(-600px); opacity: 0;}
+    100%{ -webkit-transform: translateY(0px); opacity: 1;}
+}
+@-ms-keyframes topeaseinAnimate_left{
+    0%{ -webkit-transform: translateX(-600px); opacity: 0;}
+    100%{ -webkit-transform: translateX(0px); opacity: 1;}
+}
+@-moz-keyframes topeaseinAnimate_left{
+    0%{ -webkit-transform: translateX(-600px); opacity: 0;}
+    100%{ -webkit-transform: translateX(0px); opacity: 1;}
+}
+
+/*左移*/
+@keyframes topeaseinAnimate_right{
+    0%{ transform: translateX(600px); opacity: 0;}
+    100%{ transform: translateX(0px); opacity: 1;}
+}
+@-webkit-keyframes topeaseinAnimate_right{
+    0%{ -webkit-transform: translateX(600px); opacity: 0;}
+    100%{ -webkit-transform: translateX(0px); opacity: 1;}
+}
+@-o-keyframes topeaseinAnimate_right{
+    0%{ -webkit-transform: translateY(600px); opacity: 0;}
+    100%{ -webkit-transform: translateY(0px); opacity: 1;}
+}
+@-ms-keyframes topeaseinAnimate_right{
+    0%{ -webkit-transform: translateX(600px); opacity: 0;}
+    100%{ -webkit-transform: translateX(0px); opacity: 1;}
+}
+@-moz-keyframes topeaseinAnimate_right{
+    0%{ -webkit-transform: translateX(600px); opacity: 0;}
+    100%{ -webkit-transform: translateX(0px); opacity: 1;}
+}
+
+/*上移*/
+@keyframes topeaseinAnimate{
+    0%{ transform: translateY(600px); opacity: 0;}
+    100%{ transform: translateY(0px); opacity: 1;}
+}
+@-webkit-keyframes topeaseinAnimate{
+    0%{ -webkit-transform: translateY(600px); opacity: 0;}
+    100%{ -webkit-transform: translateY(0px); opacity: 1;}
+}
+@-o-keyframes topeaseinAnimate{
+    0%{ -webkit-transform: translateX(600px); opacity: 0;}
+    100%{ -webkit-transform: translateX(0px); opacity: 1;}
+}
+@-ms-keyframes topeaseinAnimate{
+    0%{ -webkit-transform: translateY(600px); opacity: 0;}
+    100%{ -webkit-transform: translateY(0px); opacity: 1;}
+}
+@-moz-keyframes topeaseinAnimate{
+    0%{ -webkit-transform: translateY(600px); opacity: 0;}
+    100%{ -webkit-transform: translateY(0px); opacity: 1;}
+}
+.company_introduce{
+    animation: topeaseinAnimate_left 1.5s ease 1;
+    -webkit-animation: topeaseinAnimate_left 1.5s ease 1;
+    -moz-animation: topeaseinAnimate_left 1.5s ease 1;
+    -ms-animation: topeaseinAnimate_left 1.5s ease 1;
+    -o-animation: topeaseinAnimate_left 1.5s ease 1;
+     
+    /*规定动画的最后状态为结束状态*/
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards; 
+      -o-animation-fill-mode: forwards;
+      -ms-animation-fill-mode: forwards;  
+      -moz-animation-fill-mode: forwards;
+}
+.company_introduce1{
+    animation: topeaseinAnimate_left 2s ease 1;    
+    -webkit-animation: topeaseinAnimate_left 2s ease 1;
+    -moz-animation: topeaseinAnimate_left 2s ease 1;
+    -ms-animation: topeaseinAnimate_left 2s ease 1;
+    -o-animation: topeaseinAnimate_left 2s ease 1;
+     
+    /*规定动画的最后状态为结束状态*/
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards; 
+      -o-animation-fill-mode: forwards;
+      -ms-animation-fill-mode: forwards;  
+      -moz-animation-fill-mode: forwards;
+}
+.company_introduce2{
+    animation: topeaseinAnimate_left 3s ease 1;    
+    -webkit-animation: topeaseinAnimate_left 3s ease 1;
+    -moz-animation: topeaseinAnimate_left 3s ease 1;
+    -ms-animation: topeaseinAnimate_left 3s ease 1;
+    -o-animation: topeaseinAnimate_left 3s ease 1;
+     
+    /*规定动画的最后状态为结束状态*/
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards; 
+      -o-animation-fill-mode: forwards;
+      -ms-animation-fill-mode: forwards;  
+      -moz-animation-fill-mode: forwards;
+}
+.company_introduce3{
+    animation: topeaseinAnimate_left 4s ease 1;    
+    -webkit-animation: topeaseinAnimate_left 4s ease 1;
+    -moz-animation: topeaseinAnimate_left 4s ease 1;
+    -ms-animation: topeaseinAnimate_left 4s ease 1;
+    -o-animation: topeaseinAnimate_left 4s ease 1;
+     
+    /*规定动画的最后状态为结束状态*/
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards; 
+      -o-animation-fill-mode: forwards;
+      -ms-animation-fill-mode: forwards;  
+      -moz-animation-fill-mode: forwards;
+}
+.company_introduce4{
+    animation: topeaseinAnimate_left 5s ease 1;   
+    -webkit-animation: topeaseinAnimate_left 5s ease 1;
+    -moz-animation: topeaseinAnimate_left 5s ease 1;
+    -ms-animation: topeaseinAnimate_left 5s ease 1;
+    -o-animation: topeaseinAnimate_left 5s ease 1;
+     
+    /*规定动画的最后状态为结束状态*/
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards;
+      -o-animation-fill-mode: forwards;
+      -ms-animation-fill-mode: forwards;  
+      -moz-animation-fill-mode: forwards;
+}
+
+
+.company_introduce7{
+    animation: topeaseinAnimate_right 1.5s ease 1;
+    -webkit-animation: topeaseinAnimate_right 1.5s ease 1;
+    -moz-animation: topeaseinAnimate_right 1.5s ease 1;
+    -ms-animation: topeaseinAnimate_right 1.5s ease 1;
+    -o-animation: topeaseinAnimate_right 1.5s ease 1;
+     
+    /*规定动画的最后状态为结束状态*/
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards; 
+      -o-animation-fill-mode: forwards;
+      -ms-animation-fill-mode: forwards;  
+      -moz-animation-fill-mode: forwards;
+}
+.company_introduce8{
+    animation: topeaseinAnimate_right 2s ease 1;    
+    -webkit-animation: topeaseinAnimate_right 2s ease 1;
+    -moz-animation: topeaseinAnimate_right 2s ease 1;
+    -ms-animation: topeaseinAnimate_right 2s ease 1;
+    -o-animation: topeaseinAnimate_right 2s ease 1;
+     
+    /*规定动画的最后状态为结束状态*/
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards; 
+      -o-animation-fill-mode: forwards;
+      -ms-animation-fill-mode: forwards;  
+      -moz-animation-fill-mode: forwards;
+}
+.company_introduce9{
+    animation: topeaseinAnimate_right 3s ease 1;    
+    -webkit-animation: topeaseinAnimate_right 3s ease 1;
+    -moz-animation: topeaseinAnimate_right 3s ease 1;
+    -ms-animation: topeaseinAnimate_right 3s ease 1;
+    -o-animation: topeaseinAnimate_right 3s ease 1;
+     
+    /*规定动画的最后状态为结束状态*/
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards; 
+      -o-animation-fill-mode: forwards;
+      -ms-animation-fill-mode: forwards;  
+      -moz-animation-fill-mode: forwards;
+}
+.company_introduce10{
+    animation: topeaseinAnimate_right 4s ease 1;    
+    -webkit-animation: topeaseinAnimate_right 4s ease 1;
+    -moz-animation: topeaseinAnimate_right 4s ease 1;
+    -ms-animation: topeaseinAnimate_right 4s ease 1;
+    -o-animation: topeaseinAnimate_right 4s ease 1;
+     
+    /*规定动画的最后状态为结束状态*/
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards; 
+      -o-animation-fill-mode: forwards;
+      -ms-animation-fill-mode: forwards;  
+      -moz-animation-fill-mode: forwards;
+}
+.company_introduce11{
+    animation: topeaseinAnimate_right 5s ease 1;   
+    -webkit-animation: topeaseinAnimate_right 5s ease 1;
+    -moz-animation: topeaseinAnimate_right 5s ease 1;
+    -ms-animation: topeaseinAnimate_right 5s ease 1;
+    -o-animation: topeaseinAnimate_right 5s ease 1;
+     
+    /*规定动画的最后状态为结束状态*/
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards;
+      -o-animation-fill-mode: forwards;
+      -ms-animation-fill-mode: forwards;  
+      -moz-animation-fill-mode: forwards;
+}
+.company_introduce5{
+    animation: topeaseinAnimate 6s ease 1;    
+    -webkit-animation: topeaseinAnimate 6s ease 1;
+    -moz-animation: topeaseinAnimate 6s ease 1;
+    -ms-animation: topeaseinAnimate 6s ease 1;
+    -o-animation: topeaseinAnimate 6s ease 1;
+     
+    /*规定动画的最后状态为结束状态*/
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards; 
+      -o-animation-fill-mode: forwards;
+      -ms-animation-fill-mode: forwards;  
+      -moz-animation-fill-mode: forwards;
+}
+.company_introduce6{
+    animation: topeaseinAnimate 7s ease 1;    
+    -webkit-animation: topeaseinAnimate 7s ease 1;
+    -moz-animation: topeaseinAnimate 7s ease 1;
+    -ms-animation: topeaseinAnimate 7s ease 1;
+    -o-animation: topeaseinAnimate 7s ease 1;
+     
+    /*规定动画的最后状态为结束状态*/
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards; 
+      -o-animation-fill-mode: forwards;
+      -ms-animation-fill-mode: forwards;  
+      -moz-animation-fill-mode: forwards;
+}

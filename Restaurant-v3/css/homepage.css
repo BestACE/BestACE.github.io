@@ -23,6 +23,11 @@ ul{
 	max-width: 1200px;
 	margin: auto;
 }
+body{
+	/* 设置默认文本颜色，背景和字体堆栈 */
+	font-size:0.825em;
+	font-family:Arial, Helvetica, sans-serif;
+}
 /*header*/
 header{
 	width: 100%;

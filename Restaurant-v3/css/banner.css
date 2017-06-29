@@ -595,8 +595,7 @@ Class Definitions
 	color: #ff5c00;
 }
 .imageList h2{
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: 10px 0px;
 }
 .imageList p{
 	margin-bottom: 20px;

@@ -1,0 +1,502 @@
+﻿.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+	background-color: red;
+	
+}
+/*daohang*/
+
+header {
+	background-color: #282828;
+}
+
+header .menu li.bottom {
+	width: 50px;
+	height: 3px;
+	background-color: #ff5c00;
+	position: absolute;
+	bottom: 0px;
+	left: 225px;
+	transition: left .5s;
+}
+
+header .menu li:nth-child(2):hover~li.bottom {
+	left: 125px;
+}
+
+header .menu li:nth-child(1):hover~li.bottom {
+	left: 25px;
+}
+
+header .menu li:nth-child(4):hover~li.bottom {
+	left: 325px;
+}
+ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+/*菜单总体设置*/
+section{
+	min-width: 600px;
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+.dishes h1{
+	font-size: 48px;
+	background-color: rgba(0,0,0,.5);
+	color: #fff;
+	text-align: center;
+	line-height: 400px;
+	margin: 0;
+}
+.dishes p{
+	color: #888;
+}
+.dishes{
+	position: relative;
+}
+.dishes #vegetableBg{
+	min-width: 600px;
+	width: 100%;
+	position: fixed;
+	top: -200px;
+	z-index: -1;
+}
+/*素菜*/
+.dishes .meat{
+	width: 100%;
+	height: 400px;
+	background: url(../img/dishes/dishesMeat.jpg) no-repeat  center;
+	background-size: 100%;
+	position: relative;
+	
+}
+.dishes .DmenuContainer .meatWrapper{
+	height: 480px;
+	border: 1px solid #000;
+}
+/*波浪线*/
+.dishes .meat img{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 100px;
+	bottom: 0;
+	margin: auto;
+}
+.dishes .vegetable img{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 100px;
+	bottom: 0;
+	margin: auto;
+}
+.dishes .pastry img{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 100px;
+	bottom: 0;
+	margin: auto;
+}
+/*荤菜开始*/
+.dishes .vegetable{
+	width: 100%;
+	height: 400px;
+	position: relative;
+}
+.dishes .Dmenu{
+	width: 100%;
+	height: 600px;
+	/*border: 1px solid #000;*/
+	position: relative;
+	background-color: #fff;
+}
+/*荤菜菜单*/
+/*荤菜菜单1*/
+.dishes .DmenuContainer{
+	width: 1000px;
+	height: 100%;
+	position: relative;
+	margin: 0 auto;
+	overflow: hidden;
+	/*border: 1px solid #000;*/
+}
+.dishes  .button{
+	width: 1300px;
+	height: 100px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.dishes  .button button{
+	background-color: #fff;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.dishes  .button .left{
+	font-size: 70px;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	float: left;
+}
+.dishes  .button i{
+	color: rgba(253,107,24,.5);
+	transition: color .3s; 
+}
+/*.dishes  .button .right i{
+	color: rgba(253,107,24,1);
+}*/
+.dishes  .button button:hover i{
+	color: rgba(253,107,24,.8);
+}
+.dishes  .button .right{
+	font-size: 70px;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	float: right;
+}
+.dishes .DmenuContainer #vegePage{
+	float: left;
+	transition: transform .5s;
+}
+   /*滚动页面1*/
+  .dishes .Dmenu .DmenuContainer .TransformContainer{
+  	width: 2000px;
+	/*border: 1px solid #000;*/
+	height: 480px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	transition: transform .5s;
+}
+.dishes .Dmenu #vegePage{
+	float: left;
+}
+.dishes .Dmenu .meatCenter-1{
+	/*position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;*/
+	width: 1000px;
+	height: 480px;
+}
+.dishes .Dmenu .meatCenter-2{
+	/*position: absolute;
+	left: 1015px;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;*/
+	width: 1000px;
+	height: 480px;
+}
+
+.dishes .Dmenu .Dmenu_{
+	float: left;
+	width: 30%;
+	margin-right: 20px;
+	height: 100%;
+	cursor: pointer;
+}
+.dishes .Dmenu .Dmenu_ label{
+	font-size: 25px;
+	margin-top:50px ;
+	text-align: center;
+}
+.dishes .Dmenu .Dmenu_ p{
+	text-align: center;
+	color: #888;
+}
+.dishes .Dmenu .Dmenu_ img{
+	border: 10px solid rgba(0,0,0,.2);
+	width: 94%;
+	height: auto;
+}
+.dishes .Dmenu .Dmenu-{
+	width: 65%;
+	float: right;
+}
+.dishes .Dmenu .Dmenu- label{
+	font-size: 25px;
+	transition: color .5s;
+}
+.dishes .Dmenu .Dmenu- img{
+	cursor: pointer;
+	transition: transform .5s;
+}
+.dishes .Dmenu .Dmenu- figure:hover figcaption label{
+	color: rgba(253,97,24,1);
+}
+.dishes .Dmenu .Dmenu- li figure:hover img{
+	transform: translate(0,-5px);
+}
+.dishes .Dmenu ul{
+	padding: 0;
+	list-style: none;
+}
+.dishes .Dmenu ul li{
+	position: relative;
+}
+.dishes .Dmenu ul li figure{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	position: relative;
+}
+.dishes .Dmenu ul li figure figcaption{
+	width: 52%;
+	height:100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 25%;
+	right: 0;
+	margin: auto;
+}
+.dishes .Dmenu ul li figure .price{
+	width:10%;
+	height: 144px;
+	line-height: 144px;
+	margin-right: 15px;
+	float: right;
+}
+.dishes .Dmenu ul li figure .price h3{
+	font-size: 23px;
+	margin: 0;
+	text-align: center;
+	color: #f00;
+}
+.dishes .Dmenu ul li img{
+	width: 20%;
+	height: 50%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	border: 6px solid rgba(0,0,0,.5);
+	box-shadow: 1px 1px 1px 0 rgba(0,0,0,.5);
+}
+.dishes .Dmenu:nth-of-type(2) ul li img{
+	left: 50px;
+}
+/*荤菜结束*/
+/*素菜开始*/
+/*素菜菜单1*/
+.dishes #vegetableMenu{
+	position: relative;
+}
+.dishes #vegetableMenu #vegetable-Menu{
+	height: 530px;
+	margin: auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+.dishes #vegetableMenu .vegetable-center{
+	width: 100%;
+	height: 1060px;
+	transition: transform .5s;
+}
+.dishes .vegetableCenter-1{
+	margin: 0;
+	width: 100%;
+	height: 530px;
+}
+.dishes .vegetableCenter-2{
+	margin: 0;
+	width: 100%;
+	height: 530px;
+}
+.dishes #vegetableMenu{
+	height: 700px;
+}
+.dishes #vegetableMenu .DmenuContainer{
+	height: 100%;
+	transition: transform .5s;
+}
+.dishes #vegetableMenu #vegetable-Menu{
+	width: 1200px;
+}
+.dishes #vegetableMenu .DmenuContainer ul{
+	float: left;
+	width: 100%;
+	/*border: 1px solid #000;*/
+	list-style: none;
+}
+/*素菜按钮*/
+.dishes #button2{
+	width: 100px;
+	height: 400px;
+	z-index: 2;
+}
+.dishes #button2 button{
+	margin: 50px 0;
+}
+.dishes #button2 .up{
+    cursor: pointer;
+	font-size: 70px;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+}
+.dishes #button2 .down{
+	cursor: pointer;
+	font-size: 70px;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+}
+/*素菜菜单左侧*/
+.dishes #vegetableMenu ul li{
+	margin: 0;
+	width: 45%;
+	height: 25%;
+	/*border: 1px solid #000;*/
+	float: left;
+}
+.dishes #vegetableMenu ul li p{
+	width: 500px;
+	margin: 0;
+	text-align: right;
+}
+.dishes #vegetableMenu ul li h2{
+	text-align: right;
+}
+.dishes .vegetableMenu{
+	height: 100%;
+}
+.dishes #vegetableMenu ul li .vegetableContainer{
+	margin: 0 0 0 55px;
+	float: right;
+	cursor: pointer;
+	width: 24%;
+	height: 100%;
+}
+.dishes #vegetableMenu ul li .vegetableContainer img{
+	width: 23%;
+	transition: transform .5s;
+}
+.dishes #vegetableMenu ul li .vegetableContainer img:hover{
+	transform:  rotate(-5deg) scale(1.1);
+}
+/*素菜菜单右侧*/
+.dishes #vegetableMenu ul li:nth-child(2n){
+	float: right;
+}
+.dishes #vegetableMenu ul li:nth-child(2n) h2{
+	text-align: left;
+}
+.dishes #vegetableMenu ul li:nth-child(2n) p{
+	width: 537px;
+	text-align: left;
+}
+.dishes #vegetableMenu ul li:nth-child(2n) .vegetableContainer{
+	float: left;
+	margin: 0 55px 0 0;
+}
+.dishes #vegetableMenu ul li:nth-child(2n) .vegetableContainer img:hover{
+	transform:  rotate(5deg) scale(1.1);
+}
+/*甜点开始*/
+.dishes .pastry{
+	width: 100%;
+	height: 400px;
+	background: url(../img/dishes/pexels-photo-298217.jpg) no-repeat  center;
+	background-size: 100%;
+	position: relative;
+	
+}
+.dishes  .button .left1{
+	font-size: 70px;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	float: left;
+}
+.dishes  .button .right1{
+	font-size: 70px;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	float: right;
+}
+.dishes .dessertCenter-1 ul{
+	float: left;
+}
+.dishes .dessertCenter-1 ul li figure img{
+	border-radius: 100%;
+}
+.dishes .dessertCenter-1 .Dmenu_{
+	float: right;
+}
+.dishes .Dmenu .dessertCenter{
+	width: 1000px;
+	height: 400px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	overflow: hidden;
+}
+.dishes .Dmenu .dessertCenter .dessertContainer{
+	width: 2000px;
+	height: 400px;
+	transition: transform .5s;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	/*border: 1px solid #000;*/
+}
+.dishes .Dmenu .dessertCenter .dessertContainer #dessertPage{
+	float: left;
+}
+.dishes .Dmenu .dessertCenter .dessertContainer .dessertCenter-1{
+	width: 1000px;
+	height: 400px;
+}
+.dishes .Dmenu .dessertCenter .dessertContainer .dessertCenter-2{
+	width: 1000px;
+	height: 400px;
+}
+.dishes .dessertCenter-2 ul{
+	float: left;
+}
+.dishes .dessertCenter-2 ul li figure img{
+	border-radius: 100%;
+}
+.dishes .dessertCenter-2 .Dmenu_{
+	float: right;
+}

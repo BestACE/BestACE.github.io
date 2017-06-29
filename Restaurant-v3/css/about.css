@@ -169,4 +169,5 @@ header{
 	-ms-animation:  5s scale infinite;
 	-webkit-animation:  5s scale infinite;
 	animation: 5s scale infinite;
+	border: none;
 }

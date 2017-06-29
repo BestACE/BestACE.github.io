@@ -241,6 +241,9 @@ a.swShowPage.active{
 	margin-right:20px;
 	color: #878787;
 }
+#holder li .content h3{
+	margin-top: 15px;
+}
 #holder li .content h2{
 	height: 40px;
 	margin-top: 20px;

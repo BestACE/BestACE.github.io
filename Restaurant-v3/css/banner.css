@@ -495,7 +495,9 @@ Class Definitions
 	color: #ff5c00;
 	margin-bottom: 10px;
 }
-
+.Div1 p{
+	margin-bottom: 20px;
+}
 .Div h2+p {
 	color: #ff5c00;
 	text-align: center;
@@ -587,10 +589,17 @@ Class Definitions
 	margin: auto;
 }
 
-.imageList h2 {
+.imageList h2,
+.imageList p {
 	text-align: center;
+	color: #ff5c00;
 }
-
+.imageList h2{
+	margin: 10px;
+}
+.imageList p{
+	margin-bottom: 20px;
+}
 .imageList *,
 .imageList *::after,
 .imageList *::before {
@@ -662,8 +671,10 @@ Class Definitions
 
 .imageList figure figcaption p {
 	font-size: 0.9em;
+	color: rgba(255, 255, 255, .8);
 	line-height: 1.5em;
 	opacity: 0;
+	
 	transform: translateY(25px);
 }
 

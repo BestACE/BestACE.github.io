@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/css1.css" />
+		<!--<link rel="stylesheet" type="text/css" href="css/css3.css"/>-->
+		<link class="cl" rel="stylesheet" type="text/css" href="css/css.css" />
+		<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+	</head>
+		<style type="text/css">
+		</style>
+	<body>
+		<audio src="img/1.wav" width="0px" height="0px" class="zxc"></audio>
+		<div id="jmsr">
+			<div id="timu">
+				<strong>辩题</strong><input type="text" name="team5" id="team5" placeholder="请输入辩题" />
+			</div>
+			<div id="bianti">
+				<strong>正方：</strong><input type="text" name="team1" id="team1" placeholder="请输入队名" />
+				<span>vs</span>
+				<strong>反方：</strong><input type="text" name="team2" id="team2" placeholder="请输入队名" />
+			</div>
+			<div id="bianti">
+				<strong>正方辩题：</strong><input type="text" name="team3" id="team3" placeholder="请输入观点" />
+				<span>vs</span>
+				<strong>反方辩题：</strong><input type="text" name="team4" id="team4" placeholder="请输入观点" />
+			</div>
+
+			<div id="renlei1">
+				<strong>正方选手：</strong>
+				<input type="text" name="team6" id="team6" placeholder="请输入选手" />
+				<input type="text" name="team7" id="team7" placeholder="请输入选手" />
+				<input type="text" name="team8" id="team8" placeholder="请输入选手" />
+				<input type="text" name="team9" id="team9" placeholder="请输入选手" />
+			</div>
+			<div id="renlei2">
+				<strong>反方选手：</strong>
+				<input type="text" name="team10" id="team10" placeholder="请输入选手" />
+				<input type="text" name="team11" id="team11" placeholder="请输入选手" />
+				<input type="text" name="team12" id="team12" placeholder="请输入选手" />
+				<input type="text" name="team13" id="team13" placeholder="请输入选手" />
+			</div>
+			<button class="que">确定</button>
+			<div id="fuhao">
+				&copy智友社
+			</div>
+		</div>
+		<!--
+        	第二页
+       -->
+
+		<div id="yei1" style="display: none;">
+			<header>
+				<nav>
+					<div id="zhuti">
+						<svg viewBox="10 0 1000 100">
+							<pattern id="p-fire" viewBox="30 180 186 220" patternUnits="userSpaceOnUse" width="216px" height="200px">
+								<image xlink:href="css/fire.gif" width="256px" height="300px" />
+							</pattern>
+							<text text-anchor="middle" x="33%" y="50%" dy=".35em" class="text">
+  										 	曦言杯辩论赛
+ 							 </text>
+						</svg>
+						<strong id="sm"></strong>
+					</div>
+					<div id="timu">
+						<strong><span class="bltm"></span></strong>
+						<!--辩论题目-->
+					</div>
+				</nav>
+			</header>
+			<main>
+				<!--正方-->
+				<section id="content-z">
+					<h1 id="dueiming-z">正方战队名字</h1>
+					<!--正方辩题-->
+					<div id="bianti-z">
+						<strong id="bt-z"></strong>
+					</div>
+				</section>
+				<!--反方-->
+				<section id="content-f">
+					<h1 id="dueiming-f">反方战队名字</h1>
+					<!--反方辩题-->
+					<div id="bianti-f">
+						<strong id="bt-f"></strong>
+					</div>
+				</section>
+				<!--计时器-->
+
+				<!--队伍成员-->
+				<section id="renmingz">
+					<table border="0">
+						<tr>
+							<td>1号辩手:<strong class="bs"></strong></td>
+						</tr>
+						<tr>
+							<td>2号辩手:<strong class="bs"></strong></td>
+						</tr>
+						<tr>
+							<td>3号辩手:<strong class="bs"></strong></td>
+						</tr>
+						<tr>
+							<td>4号辩手:<strong class="bs"></strong></td>
+						</tr>
+					</table>
+				</section>
+
+				<!--队伍成员-->
+				<section id="renmingf">
+					<table border="0">
+						<tr>
+							<td>1号辩手:<strong class="bs"></strong></td>
+						</tr>
+						<tr>
+							<td>2号辩手:<strong class="bs"></strong></td>
+						</tr>
+						<tr>
+							<td>3号辩手:<strong class="bs"></strong></td>
+						</tr>
+						<tr>
+							<td>4号辩手:<strong class="bs"></strong></td>
+						</tr>
+					</table>
+				</section>
+				<input type="button" name="dange" id="dange1" value="正方开始" style="display: none;outline: none;" />
+				<input type="button" name="dange" id="dange2" value="反方开始" style="display: none;outline: none;" />
+				<section id="time">
+					<!--<div class="zhezhao"></div>-->
+					<input style="outline: none;" type="button" name="kaishi" class="kaishi" value="开始" />
+					<input style="outline: none; display: none;" type="button" name="zanting1" class="zanting" value="暂停" />
+					<input style="outline: none; display: none;" type="button" name="chongzhi1" class="chongzhi" value="重置" />
+					<!--<div class="magicI">
+					</div>
+					<div class="magicII">
+					</div>
+					<div class="magicIII">	
+					</div>-->
+					<!--魔法图                  -->
+					<div class="wrapper">
+						<div class="mci"></div>
+						<div class="big">
+							<img src="img/magicIII.png" />
+							<div class="middle">
+								<img src="img/magicII.png" />
+							</div>
+						</div>
+					</div>
+					<div class="wenzi">
+						<h3 id="talk">正方发言</h3>
+					</div>
+
+					<span id="js">						
+					</span>
+				</section>
+				<section id="time2" style="display: none;">
+					<span id="js2"></span>
+					<div class="wrapper2">
+						<div class="mci2"></div>
+						<div class="big2">
+							<img src="img/magicIII.png" />
+							<div class="middle2">
+								<img src="img/magicII.png" />
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer>
+				<ul id="menu">
+					<li>
+						<a href="#" class="a">开篇立论</a>
+					</li>
+					<li>
+						<a href="#" class="a">攻辩</a>
+					</li>
+					<li>
+						<a href="#" class="a">攻辩小结</a>
+					</li>
+					<li>
+						<a href="#" class="a">自由辩论</a>
+					</li>
+					<li>
+						<a href="#" class="a">反方四辩总结陈词</a>
+					</li>
+					<li>
+						<a href="#" class="a">正方四辩总结陈词</a>
+					</li>
+				</ul>
+			</footer>
+		</div>
+		<script type="text/javascript">
+			var tin1;
+			var tin2;
+			var magicII = document.querySelector(".big img");
+			var magicIII = document.querySelector(".middle img");
+			var zxc = document.getElementsByClassName("zxc");
+			var tin1;
+			var jmsr = document.getElementById("jmsr");
+			var yei1 = document.getElementById("yei1");
+			//div的定义
+			var cl = document.getElementsByClassName("cl");
+			//css的定义
+			var que = document.getElementsByClassName("que");
+			que[0].addEventListener("click", fang1);
+			var js = document.getElementById("js");
+			var js2 = document.getElementById("js2");
+			var talk = document.getElementById("talk");
+			var jishiqi = 1;
+			var wenzi = document.getElementsByClassName("wenzi");
+			var xuanzhuan1;
+			//确定按钮
+			function fang1() {
+				var team1 = document.getElementById("team1").value;
+				var team2 = document.getElementById("team2").value;
+				//队名
+				var team3 = document.getElementById("team3").value;
+				var team4 = document.getElementById("team4").value;
+				//观点
+				var team5 = document.getElementById("team5").value;
+				//辩题
+				var team6 = document.getElementById("team6").value;
+				var team7 = document.getElementById("team7").value;
+				var team8 = document.getElementById("team8").value;
+				var team9 = document.getElementById("team9").value;
+				//正方
+				var team10 = document.getElementById("team10").value;
+				var team11 = document.getElementById("team11").value;
+				var team12 = document.getElementById("team12").value;
+				var team13 = document.getElementById("team13").value;
+				//反方
+				//				var bt = document.getElementById("bt").value;
+				//标题
+				var bs = document.getElementsByClassName("bs");
+				bs[0].innerText = team6;
+				bs[1].innerText = team7;
+				bs[2].innerText = team8;
+				bs[3].innerText = team9;
+				//正方的名字输入
+				bs[4].innerText = team10;
+				bs[5].innerText = team11;
+				bs[6].innerText = team12;
+				bs[7].innerText = team13;
+				//反方的名字输入
+				var bltm = document.getElementsByClassName("bltm");
+				bltm[0].innerText = team5;
+				//辩题
+				var sm = document.getElementById("sm");
+				//				sm.innerText = bt;
+				//赛名
+				var dueimingz = document.getElementById("dueiming-z");
+				var dueimingf = document.getElementById("dueiming-f");
+				dueimingz.innerText = team1;
+				dueimingf.innerText = team2;
+				//队名
+				var btz = document.getElementById("bt-z");
+				var btf = document.getElementById("bt-f");
+				btz.innerText = team3;
+				btf.innerText = team4;
+				jmsr.style.display = "none";
+				yei1.style.display = "block";
+				cl[0].href = "css/css1.css";
+				n = 18000;
+				m = n;
+				shijian(m);
+			}
+
+			var pos = 0;
+			var posX;
+
+			function xuanzhuan() {
+				pos += 3;
+				posX = -pos;
+				magicII.style.transform = "rotate(" + pos + "deg)";
+				magicIII.style.transform = "rotate(" + posX + "deg)";
+				//					requestAnimationFrame(xuanzhuan);
+			}
+			var kaishi = document.getElementsByClassName("kaishi");
+			var zanting = document.getElementsByClassName("zanting");
+			var chongzhi = document.getElementsByClassName("chongzhi");
+
+			var x, y, z;
+			//分,秒,毫秒
+			kaishi[0].addEventListener("click", kaishi1);
+			//			zanting[0].addEventListener("click", tingzhi1);
+			chongzhi[0].addEventListener("click", chongzhi1);
+			var dange1 = document.getElementById("dange1");
+			var dange2 = document.getElementById("dange2");
+			//页面1 开始与暂停
+			function kaishi1() {
+				tin1 = setInterval(fang2, 10);
+				xuanzhuan1 = setInterval(xuanzhuan, 180);
+				chongzhi[0].style.display = "block";
+				kaishi[0].style.display = "none";
+			}
+			//开始按钮
+			//			function tingzhi1() {
+			//				chongzhi[0].style.display = "block";
+			//				zanting[0].style.display = "none";
+			//				clearInterval(xuanzhuan1);
+			//				clearInterval(tin1);
+			//			}
+			//停止按钮
+			function chongzhi1() {
+				n = m;
+				shijian(n);
+				if(jishiqi == 0) {
+					talk.innerText = "正方发言";
+					jishiqi = 1;
+				} else {
+					console.log("z");
+					jishiqi = 0;
+					talk.innerText = "反方发言";
+				}
+				kaishi[0].style.display = "block";
+				chongzhi[0].style.display = "none";
+				magicII.style.transform = "rotate(0deg)";
+				magicIII.style.transform = "rotate(0deg)";
+				clearInterval(xuanzhuan1);
+				clearInterval(tin1);
+				pos = 0;
+			}
+			//重置按钮
+			//不包括自由辩论
+			dange1.addEventListener("click", kaishizheng);
+			dange2.addEventListener("click", kaishifan);
+
+			function kaishizheng() {
+				tin1 = setInterval(fang3, 10);
+				dange2.style.display = "block";
+				dange1.style.display = "none";
+				clearInterval(tin2);
+			}
+
+			function kaishifan() {
+				tin2 = setInterval(fang4, 10);
+				dange1.style.display = "block";
+				dange2.style.display = "none";
+				clearInterval(tin1);
+			}
+			//自由辩论按钮;
+
+			function fang2() {
+				n = n - 1;
+				x = Math.floor(n / 6000);
+				y = Math.floor((n - x * 6000) / 100);
+				z = Math.floor(n - y * 100 - x * 6000);
+				if(n < 0) {
+					js.innerText = "00:00:00";
+				} else if(y < 10 && z < 10) {
+					js.innerText = "0" + x + ":" + "0" + y + ":" + "0" + z;
+				} else if(y >= 10 && z < 10) {
+					js.innerText = "0" + x + ":" + y + ":" + "0" + z;
+				} else if(y < 10 && z >= 10) {
+					js.innerText = "0" + x + ":" + "0" + y + ":" + z;
+				} else {
+					js.innerText = "0" + x + ":" + y + ":" + z;
+				}
+				if(n == 3000) {
+					zxc[0].play();
+				}
+				if(n == 2900) {
+					zxc[0].play();
+				}
+				if(n == 2800) {
+					zxc[0].play();
+				}
+				if(n == 0) {
+					zxc[0].play();
+					magicII.style.transform = "rotate(0deg)";
+					magicIII.style.transform = "rotate(0deg)";
+					clearInterval(xuanzhuan1);
+					pos = 0;
+				}
+				if(n < 0 && n > -1) {
+					zxc[0].play();
+				}
+			}
+
+			function fang3() {
+				n = n - 1;
+				x = Math.floor(n / 6000);
+				y = Math.floor((n - x * 6000) / 100);
+				z = Math.floor(n - y * 100 - x * 6000);
+				if(n < 0) {
+					js.innerText = "00:00:00";
+				} else if(y < 10 && z < 10) {
+					js.innerText = "0" + x + ":" + "0" + y + ":" + "0" + z;
+				} else if(y >= 10 && z < 10) {
+					js.innerText = "0" + x + ":" + y + ":" + "0" + z;
+				} else if(y < 10 && z >= 10) {
+					js.innerText = "0" + x + ":" + "0" + y + ":" + z;
+				} else {
+					js.innerText = "0" + x + ":" + y + ":" + z;
+				}
+				if(n == 3000) {
+					zxc[0].play();
+				}
+				if(n == 2900) {
+					zxc[0].play();
+				}
+				if(n == 2800) {
+					zxc[0].play();
+				}
+				if(n == 0) {
+					zxc[0].play();
+					kaishifan();
+				}
+				if(n < 0 && m > -1) {
+					zxc[0].play();
+				}
+			}
+
+			function fang4() {
+				m = m - 1;
+				x = Math.floor(m / 6000);
+				y = Math.floor((m - x * 6000) / 100);
+				z = Math.floor(m - y * 100 - x * 6000);
+				if(n < 0) {
+					js2.innerText = "00:00:00";
+				} else if(y < 10 && z < 10) {
+					js2.innerText = "0" + x + ":" + "0" + y + ":" + "0" + z;
+				} else if(y >= 10 && z < 10) {
+					js2.innerText = "0" + x + ":" + y + ":" + "0" + z;
+				} else if(y < 10 && z >= 10) {
+					js2.innerText = "0" + x + ":" + "0" + y + ":" + z;
+				} else {
+					js2.innerText = "0" + x + ":" + y + ":" + z;
+				}
+				if(m == 3000) {
+					zxc[0].play();
+				}
+				if(m == 2900) {
+					zxc[0].play();
+				}
+				if(n == 2800) {
+					zxc[0].play();
+				}
+				if(m == 0) {
+					zxc[0].play();
+					kaishizheng();
+				}
+				if(m < 0 && m > -1) {
+					zxc[0].play();
+				}
+			}
+
+			function shijian(n) {
+				x = Math.floor(n / 6000);
+				y = Math.floor((n - x * 6000) / 100);
+				z = Math.floor(n - y * 100 - x * 6000);
+				if(y < 10 && z < 10) {
+					js.innerText = "0" + x + ":" + "0" + y + ":" + "0" + z;
+				} else if(y >= 10 && z < 10) {
+					js.innerText = "0" + x + ":" + y + ":" + "0" + z;
+				} else if(y < 10 && z >= 10) {
+					js.innerText = "0" + x + ":" + "0" + y + ":" + z;
+				} else {
+					js.innerText = "0" + x + ":" + y + ":" + z;
+				}
+			}
+			//文本1时间的显示
+			function shijian1(n) {
+				x = Math.floor(n / 6000);
+				y = Math.floor((n - x * 6000) / 100);
+				z = Math.floor(n - y * 100 - x * 6000);
+				if(y < 10 && z < 10) {
+					js2.innerText = "0" + x + ":" + "0" + y + ":" + "0" + z;
+				} else if(y >= 10 && z < 10) {
+					js2.innerText = "0" + x + ":" + y + ":" + "0" + z;
+				} else if(y < 10 && z >= 10) {
+					js2.innerText = "0" + x + ":" + "0" + y + ":" + z;
+				} else {
+					js2.innerText = "0" + x + ":" + y + ":" + z;
+				}
+			}
+			//文本2时间的显示
+			var a = document.getElementsByClassName("a");
+			var time2 = document.getElementById("time2")
+			a[0].addEventListener("click", function() {
+				clearInterval(xuanzhuan1);
+				clearInterval(tin1);
+				n = 18000;
+				m = n;
+				shijian(m);
+				talk.innerText = "正方发言"
+				jishiqi = 1;
+				qh();
+				magicII.style.transform = "rotate(0deg)";
+				magicIII.style.transform = "rotate(0deg)";
+				wenzi[0].style.display = "block";
+				pos = 0;
+			});
+			a[1].addEventListener("click", function() {
+				clearInterval(xuanzhuan1);
+				clearInterval(tin1);
+				n = 24000;
+				m = n;
+				shijian(m);
+				talk.innerText = "正方发言"
+				jishiqi = 1;
+				qh();
+				magicII.style.transform = "rotate(0deg)";
+				magicIII.style.transform = "rotate(0deg)";
+				wenzi[0].style.display = "block";
+				pos = 0;
+			});
+			a[2].addEventListener("click", function() {
+				clearInterval(xuanzhuan1);
+				clearInterval(tin1);
+				n = 9000;
+				m = n;
+				shijian(m);
+				talk.innerText = "正方发言"
+				jishiqi = 1;
+				qh();
+				magicII.style.transform = "rotate(0deg)";
+				magicIII.style.transform = "rotate(0deg)";
+				wenzi[0].style.display = "block";
+				pos = 0;
+			});
+			a[3].addEventListener("click", function() {
+				clearInterval(xuanzhuan1);
+				clearInterval(tin1);
+				cl[0].href = "css/css3.css";
+				kaishi[0].style.display = "none";
+				zanting[0].style.display = "none";
+				chongzhi[0].style.display = "none";
+
+				dange1.style.display = "block";
+
+				time2.style.display = "block";
+				n = 36000;
+				m = n;
+				shijian(m);
+				shijian1(m);
+				clearInterval(tin1);
+				wenzi[0].style.display = "none";
+				magicII.style.transform = "rotate(0deg)";
+				magicIII.style.transform = "rotate(0deg)";
+				pos = 0;
+			});
+			a[4].addEventListener("click", function() {
+				clearInterval(xuanzhuan1);
+				clearInterval(tin1);
+				n = 18000;
+				m = n;
+				shijian(m);
+				wenzi[0].style.display = "none";
+				qh();
+				magicII.style.transform = "rotate(0deg)";
+				magicIII.style.transform = "rotate(0deg)";
+				pos = 0;
+			});
+			a[5].addEventListener("click", function() {
+				clearInterval(xuanzhuan1);
+				clearInterval(tin1);
+				n = 18000;
+				m = n;
+				shijian(m);
+				wenzi[0].style.display = "none";
+				qh();
+				magicII.style.transform = "rotate(0deg)";
+				magicIII.style.transform = "rotate(0deg)";
+				pos = 0;
+			});
+
+			function qh() {
+				cl[0].href = "css/css1.css";
+				kaishi[0].style.display = "block";
+				zanting[0].style.display = "none";
+				chongzhi[0].style.display = "none";
+				dange1.style.display = "none";
+				dange2.style.display = "none";
+				time2.style.display = "none";
+				clearInterval(tin1);
+			}
+		</script>
+	</body>
+
+</html>

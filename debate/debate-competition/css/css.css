@@ -1,0 +1,47 @@
+body{
+	margin: 0;
+	background-image:url(../img/1.jpg) ;
+	background-size: 100%;
+}
+#jmsr{
+	height: 100%;	
+	width: 100%;
+	margin:150px auto;
+	text-align: center;
+}
+#jmsr strong{
+	width: 250px;
+	display: inline-block;
+	font-size: 2em;
+}
+#jmsr input{
+	height: 40px;
+	text-align: center;
+	margin-top: 40px;
+	border: none;
+	border-radius: 8px;
+}	
+#jmsr #bianti{
+	width: 1000px;
+	margin: auto;
+}
+#jmsr span{
+	font-size: 3em;
+	width: 50px;
+	height: 64px;
+	line-height: 64px;
+	margin-left:20px ;
+}
+#jmsr button{
+	margin-top: 70px;
+	width: 200px;
+	height: 50px;
+	line-height: 44px;
+	border-radius: 18px;
+	font-size: 2em;
+}
+#jmsr #timu input{
+	width: 700px;
+	height: 50px;
+	border: none;
+}

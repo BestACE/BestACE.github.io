@@ -1,0 +1,186 @@
+/*main #time2{
+	width:300px;  
+    height:300px;  
+    margin-right:290px ; 
+    margin-top: 61px;
+    transform:rotate(-45deg);  
+    position: inherit;
+}
+main #time2 span{
+	position: absolute;
+	top: 39%;
+	left: 16%;
+	font-size: 3em;
+	transform:rotate(45deg); 
+}
+main #time2 input{
+	width:150px;
+	height: 25px;
+	float: left;
+	margin-top: -140px;
+	transform: rotate(45deg);
+}*/
+/*main #time{
+	width:300px;  
+    height:300px;  
+    margin-left:280px ; 
+    margin-top: -354px;
+    transform:rotate(-45deg);  
+    position: inherit;
+}*/
+main #time2 .wrapper2 {
+	width: 478px;
+	height: 478px;
+	position: absolute;
+	left: 334%;
+	right: 0;
+	top: 237%;
+	bottom: 0;
+	margin: auto;
+	border-radius: 100%;
+	box-shadow: 0 0 300px 36px rgba(255, 0, 0, .8);
+}
+
+main #time2 .big2 {
+	width: 102%;
+	height: 102%;
+	position: absolute;
+	animation: around 20s forwards linear;
+				animation-iteration-count: infinite;
+				transform: rotate(0deg) ;
+	left: -5px;
+	right: 0;
+	top: 0px;
+	bottom: 0;
+	margin: auto;
+	border-radius: 100%;
+}
+
+main #time2 .big2 img {
+	width: 100%;
+	height: auto;
+	transition: transform 1s;
+}
+
+main #time2 .middle2 {
+	width: 76%;
+	height: 76%;
+	position: absolute;
+	animation: rearound 20s forwards linear;
+				animation-iteration-count: infinite;
+				transform: rotate(0deg) ;
+	left: 0;
+	right: 0;
+	top: 0px;
+	bottom: 0;
+	margin: auto;
+	border-radius: 100%;
+}
+
+main #time2 .middle2 img {
+	width: 100%;
+	height: auto;
+	transition: transform 1s;
+}
+
+main #time2 .mci2 {
+	width: 470px;
+	height: 470px;
+	background: #000;
+	border-radius: 100%;
+	position: absolute;
+	left: :;
+	%;
+	top: 0;
+}
+main #time2 span{
+	position: absolute;
+	top: 157%;
+	left: 381%;
+	font-size: 3em;
+	color: #fff;
+	z-index: 9;
+}
+	@keyframes around{
+				0%{transform: rotate(0deg);}
+				100%{transform: rotate(200deg);}
+			}
+			@keyframes rearound{
+				0%{transform: rotate(0deg);}
+				100%{transform: rotate(-360deg);}
+			}
+
+
+main #time span{
+	position: absolute;
+	left: -29%;
+	top: 21%;
+}
+main #time h3{
+	display: none;
+}
+.wrapper {
+	width: 478px;
+	height: 478px;
+	position: absolute;
+	left: -120%;
+	right: 0;
+	top: 0;
+	bottom: 42%;
+	margin: auto;
+	border-radius: 100%;
+	box-shadow: 0 0 300px 36px rgba(255, 0, 0, .8);
+	animation: around 20s forwards linear;
+				animation-iteration-count: infinite;
+				transform: rotate(0deg) ;
+}
+
+.big {
+	width: 102%;
+	height: 102%;
+	position: absolute;
+	left: -5px;
+	right: 0;
+	top: 0px;
+	bottom: 0;
+	margin: auto;
+	border-radius: 100%;
+}
+
+.big img {
+	width: 100%;
+	height: auto;
+	transition: transform 1s;
+}
+
+.middle {
+	width: 76%;
+	height: 76%;
+	position: absolute;
+	animation: rearound 20s forwards linear;
+				animation-iteration-count: infinite;
+				transform: rotate(0deg) ;
+	left: 0;
+	right: 0;
+	top: 0px;
+	bottom: 0;
+	margin: auto;
+	border-radius: 100%;
+}
+
+.middle img {
+	width: 100%;
+	height: auto;
+	transition: transform 1s;
+}
+
+.mci {
+	width: 470px;
+	height: 470px;
+	background: #000;
+	border-radius: 100%;
+	position: absolute;
+	left: :;
+	%;
+	top: 0;
+}
